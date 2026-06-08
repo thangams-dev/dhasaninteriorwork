@@ -71,8 +71,8 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     background-image:
-      radial-gradient(ellipse at top left, oklch(0.78 0.08 60 / 0.35), transparent 55%),
-      radial-gradient(ellipse at bottom right, oklch(0.62 0.10 130 / 0.18), transparent 55%);
+      radial-gradient(ellipse at top left, oklch(0.55 0.10 155 / 0.18), transparent 55%),
+      radial-gradient(ellipse at bottom right, oklch(0.70 0.13 75 / 0.20), transparent 55%);
     background-attachment: fixed;
   }
   h1,h2,h3,h4 { font-family: var(--font-display); letter-spacing: -0.01em; }
