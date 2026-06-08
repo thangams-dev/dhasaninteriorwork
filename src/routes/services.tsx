@@ -67,7 +67,7 @@ function Services() {
       <section className="py-20 px-6 text-center">
         <Reveal>
           <p className="text-gold uppercase tracking-[0.3em] text-xs mb-4">Our services</p>
-          <h1 className="font-display text-5xl sm:text-7xl mb-6 max-w-4xl mx-auto leading-tight">Everything your home needs, <span className="text-gradient-gold italic">none of the runaround.</span></h1>
+          <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl mb-6 max-w-4xl mx-auto leading-tight">Everything your home needs, <span className="text-gradient-gold italic">none of the runaround.</span></h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">One studio. One project manager. Every interior trade you'll ever need under a single quote.</p>
         </Reveal>
       </section>
@@ -76,7 +76,7 @@ function Services() {
         <div className="max-w-7xl mx-auto space-y-24">
           {big.map((s, i) => (
             <Reveal key={s.title} delay={i * 80}>
-              <div className={`grid lg:grid-cols-2 gap-12 items-center ${i % 2 ? "lg:[&>*:first-child]:order-2" : ""}`}>
+              <div className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ${i % 2 ? "lg:[&>*:first-child]:order-2" : ""}`}>
                 <div className="relative group">
                   <div className="absolute -inset-4 bg-gradient-to-tr from-gold/20 to-rose/15 rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition" />
                   <div className="relative overflow-hidden rounded-3xl border border-gold/20">
@@ -88,7 +88,7 @@ function Services() {
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-gold/20 to-rose/10 flex items-center justify-center mb-5">
                     <s.icon className="w-6 h-6 text-gold" />
                   </div>
-                  <h2 className="font-display text-4xl sm:text-5xl mb-5">{s.title}</h2>
+                  <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl mb-5">{s.title}</h2>
                   <p className="text-muted-foreground leading-relaxed mb-6">{s.desc}</p>
                   <ul className="grid sm:grid-cols-2 gap-3 mb-8">
                     {s.features.map(f => (
