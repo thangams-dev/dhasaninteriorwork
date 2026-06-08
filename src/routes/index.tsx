@@ -1,11 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, ChefHat, Sofa, Tv, Layers, BookOpen, Wand2, Award, Clock, Heart, Star, Phone, MessageCircle } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
-import logo from "@/assets/logo.png.asset.json";
+import heroKitchen from "@/assets/hero-kitchen.jpg.asset.json";
 import kitchenYellow from "@/assets/kitchen-yellow.jpg.asset.json";
 import kitchenModular from "@/assets/kitchen-modular.jpg.asset.json";
 import wallPartition from "@/assets/wall-partition.jpg.asset.json";
-import interiorBanner from "@/assets/interior-banner.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
