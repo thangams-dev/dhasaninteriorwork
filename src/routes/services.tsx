@@ -5,6 +5,7 @@ import kitchenYellow from "@/assets/kitchen-yellow.jpg.asset.json";
 import kitchenModular from "@/assets/kitchen-modular.jpg.asset.json";
 import wallPartition from "@/assets/wall-partition.jpg.asset.json";
 import interiorBanner from "@/assets/interior-banner.jpg.asset.json";
+import tvPooja from "@/assets/tv-pooja.jpg.asset.json";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -37,7 +38,7 @@ const big = [
   },
   {
     icon: Tv,
-    img: interiorBanner.url,
+    img: tvPooja.url,
     title: "TV & Pooja Units",
     tag: "Statement walls",
     desc: "Cinematic TV units and serene pooja corners — textured walls, backlit niches, fluted wood and marble accents that make every guest pause at the entrance.",

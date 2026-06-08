@@ -21,9 +21,14 @@ function Contact() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hi Dhasan! I'm ${form.name}.%0APhone: ${form.phone}%0AService: ${form.service}%0A%0A${form.message}`;
-    window.open(`https://wa.me/919524543097?text=${text}`, "_blank");
+    const text = encodeURIComponent(
+      `Hi Dhasan! I'm ${form.name || "(name)"}.\nPhone: ${form.phone}\nService: ${form.service}\n\n${form.message}`
+    );
+    const url = `https://wa.me/919524543097?text=${text}`;
     setSent(true);
+    // Use direct navigation as a fallback when popups are blocked
+    const win = window.open(url, "_blank", "noopener,noreferrer");
+    if (!win) window.location.href = url;
     setTimeout(() => setSent(false), 4000);
   };
 
