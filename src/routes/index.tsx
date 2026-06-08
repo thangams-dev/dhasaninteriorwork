@@ -1,11 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, ChefHat, Sofa, Tv, Layers, BookOpen, Wand2, Award, Clock, Heart, Star, Phone, MessageCircle } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
-import logo from "@/assets/logo.png.asset.json";
+import heroKitchen from "@/assets/hero-kitchen.jpg.asset.json";
 import kitchenYellow from "@/assets/kitchen-yellow.jpg.asset.json";
 import kitchenModular from "@/assets/kitchen-modular.jpg.asset.json";
 import wallPartition from "@/assets/wall-partition.jpg.asset.json";
-import interiorBanner from "@/assets/interior-banner.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -40,10 +39,8 @@ function Home() {
     <>
       {/* HERO */}
       <section className="relative min-h-[88vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          <img src={interiorBanner.url} alt="" className="w-full h-full object-cover opacity-25" />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/60 to-background" />
-        </div>
+        <div className="absolute inset-0 -z-10 bg-gradient-luxury" />
+
 
         {/* floating decor */}
         <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-gold/10 blur-3xl animate-float" />
@@ -95,7 +92,7 @@ function Home() {
             <div className="relative max-w-sm sm:max-w-md mx-auto lg:max-w-none">
               <div className="absolute -inset-6 bg-gradient-to-tr from-gold/20 via-transparent to-rose/20 rounded-3xl blur-2xl" />
               <div className="relative rounded-3xl overflow-hidden border-gold-glow animate-float">
-                <img src={logo.url} alt="Dhasan logo" className="w-full aspect-square object-cover" />
+                <img src={heroKitchen.url} alt="Modern emerald modular kitchen by Dhasan" className="w-full aspect-[4/5] object-cover" />
               </div>
               <div className="absolute -bottom-4 -left-2 sm:-bottom-6 sm:-left-6 bg-card/90 backdrop-blur-xl border border-gold/30 rounded-2xl p-3 sm:p-4 shadow-2xl animate-float" style={{ animationDelay: "2s" }}>
                 <p className="text-[10px] sm:text-xs uppercase tracking-wider text-muted-foreground">Owned by</p>
