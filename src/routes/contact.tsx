@@ -21,9 +21,14 @@ function Contact() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hi Dhasan! I'm ${form.name}.%0APhone: ${form.phone}%0AService: ${form.service}%0A%0A${form.message}`;
-    window.open(`https://wa.me/919524543097?text=${text}`, "_blank");
+    const text = encodeURIComponent(
+      `Hi Dhasan! I'm ${form.name || "(name)"}.\nPhone: ${form.phone}\nService: ${form.service}\n\n${form.message}`
+    );
+    const url = `https://wa.me/919524543097?text=${text}`;
     setSent(true);
+    // Use direct navigation as a fallback when popups are blocked
+    const win = window.open(url, "_blank", "noopener,noreferrer");
+    if (!win) window.location.href = url;
     setTimeout(() => setSent(false), 4000);
   };
 
@@ -32,7 +37,7 @@ function Contact() {
       <section className="py-20 px-6 text-center">
         <Reveal>
           <p className="text-gold uppercase tracking-[0.3em] text-xs mb-4">Let's talk</p>
-          <h1 className="font-display text-5xl sm:text-7xl mb-6 max-w-4xl mx-auto leading-tight">Let's build your <span className="text-gradient-gold italic">dream space</span> together.</h1>
+          <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl mb-6 max-w-4xl mx-auto leading-tight">Let's build your <span className="text-gradient-gold italic">dream space</span> together.</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Tell us about your home. We'll respond within the hour — most days, within minutes.</p>
         </Reveal>
       </section>
