@@ -39,10 +39,8 @@ function Home() {
     <>
       {/* HERO */}
       <section className="relative min-h-[88vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          <img src={interiorBanner.url} alt="" className="w-full h-full object-cover opacity-25" />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/60 to-background" />
-        </div>
+        <div className="absolute inset-0 -z-10 bg-gradient-luxury" />
+
 
         {/* floating decor */}
         <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-gold/10 blur-3xl animate-float" />
