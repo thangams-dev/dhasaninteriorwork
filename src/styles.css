@@ -71,22 +71,22 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     background-image:
-      radial-gradient(ellipse at top left, oklch(0.28 0.04 200 / 0.5), transparent 50%),
-      radial-gradient(ellipse at bottom right, oklch(0.30 0.06 20 / 0.25), transparent 50%);
+      radial-gradient(ellipse at top left, oklch(0.78 0.08 60 / 0.35), transparent 55%),
+      radial-gradient(ellipse at bottom right, oklch(0.62 0.10 130 / 0.18), transparent 55%);
     background-attachment: fixed;
   }
   h1,h2,h3,h4 { font-family: var(--font-display); letter-spacing: -0.01em; }
 }
 
 @utility text-gradient-gold {
-  background: linear-gradient(135deg, oklch(0.86 0.09 85), oklch(0.72 0.13 75), oklch(0.92 0.08 90));
+  background: linear-gradient(135deg, oklch(0.55 0.14 35), oklch(0.45 0.10 45), oklch(0.62 0.13 30));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 @utility bg-gradient-luxury {
-  background: linear-gradient(135deg, oklch(0.20 0.03 200), oklch(0.16 0.02 200) 50%, oklch(0.22 0.04 20 / 0.4));
+  background: linear-gradient(135deg, oklch(0.95 0.02 75), oklch(0.92 0.025 60) 50%, oklch(0.90 0.04 130 / 0.4));
 }
 
 @utility border-gold-glow {
