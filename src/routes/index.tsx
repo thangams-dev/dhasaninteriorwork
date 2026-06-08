@@ -39,7 +39,7 @@ function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-[92vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[88vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <img src={interiorBanner.url} alt="" className="w-full h-full object-cover opacity-25" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/60 to-background" />
@@ -49,42 +49,42 @@ function Home() {
         <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-gold/10 blur-3xl animate-float" />
         <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-rose/10 blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
 
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 py-16 lg:py-0 grid lg:grid-cols-2 gap-10 lg:gap-12 items-center relative w-full">
           <Reveal>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold/40 bg-card/40 backdrop-blur text-xs uppercase tracking-[0.25em] text-gold mb-6">
-              <Sparkles className="w-3.5 h-3.5" /> Tenkasi · Since the first home we touched
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-gold/40 bg-card/40 backdrop-blur text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
+              <Sparkles className="w-3.5 h-3.5 shrink-0" /> <span className="truncate">Tenkasi · Crafted with care</span>
             </div>
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] mb-6">
+            <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl leading-[1.1] mb-5">
               Your dream <span className="text-gradient-gold italic">interior</span>,
-              <br />built around <span className="text-gradient-gold">your life.</span>
+              <br className="hidden sm:block" /> built around <span className="text-gradient-gold">your life.</span>
             </h1>
-            <p className="text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed">
               Modular kitchens, wardrobes, false ceilings and full home interiors — handcrafted in Tenkasi by Murugesh and the Dhasan team. No templates. No shortcuts. Just rooms you'll never want to leave.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Link to="/contact" className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium hover:scale-105 transition-transform shimmer">
+            <div className="flex flex-wrap gap-3 sm:gap-4">
+              <Link to="/contact" className="group inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium text-sm sm:text-base hover:scale-105 transition-transform shimmer">
                 Book Free Consultation <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 <span className="shimmer-overlay" />
               </Link>
-              <Link to="/services" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-gold/40 text-gold hover:bg-gold/10 transition-colors">
+              <Link to="/services" className="inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full border border-gold/40 text-gold hover:bg-gold/10 transition-colors text-sm sm:text-base">
                 Explore Services
               </Link>
             </div>
 
-            <div className="mt-12 flex items-center gap-8">
+            <div className="mt-10 flex items-center gap-5 sm:gap-8 flex-wrap">
               <div>
                 <div className="flex items-center gap-1 text-gold">
                   {[...Array(5)].map((_,i) => <Star key={i} className="w-4 h-4 fill-current" />)}
                 </div>
-                <p className="text-xs text-muted-foreground mt-1">5.0 on Google · Trusted by many</p>
+                <p className="text-xs text-muted-foreground mt-1">5.0 on Google</p>
               </div>
               <div className="h-10 w-px bg-gold/20" />
               <div>
                 <div className="font-display text-2xl text-gradient-gold">100+</div>
                 <p className="text-xs text-muted-foreground">Homes transformed</p>
               </div>
-              <div className="h-10 w-px bg-gold/20 hidden sm:block" />
-              <div className="hidden sm:block">
+              <div className="h-10 w-px bg-gold/20" />
+              <div>
                 <div className="font-display text-2xl text-gradient-gold">24/7</div>
                 <p className="text-xs text-muted-foreground">Always reachable</p>
               </div>
@@ -92,17 +92,17 @@ function Home() {
           </Reveal>
 
           <Reveal delay={200}>
-            <div className="relative">
+            <div className="relative max-w-sm sm:max-w-md mx-auto lg:max-w-none">
               <div className="absolute -inset-6 bg-gradient-to-tr from-gold/20 via-transparent to-rose/20 rounded-3xl blur-2xl" />
               <div className="relative rounded-3xl overflow-hidden border-gold-glow animate-float">
                 <img src={logo.url} alt="Dhasan logo" className="w-full aspect-square object-cover" />
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-card/90 backdrop-blur-xl border border-gold/30 rounded-2xl p-4 shadow-2xl animate-float" style={{ animationDelay: "2s" }}>
-                <p className="text-xs uppercase tracking-wider text-muted-foreground">Owned by</p>
-                <p className="font-display text-xl text-gradient-gold">Murugesh</p>
+              <div className="absolute -bottom-4 -left-2 sm:-bottom-6 sm:-left-6 bg-card/90 backdrop-blur-xl border border-gold/30 rounded-2xl p-3 sm:p-4 shadow-2xl animate-float" style={{ animationDelay: "2s" }}>
+                <p className="text-[10px] sm:text-xs uppercase tracking-wider text-muted-foreground">Owned by</p>
+                <p className="font-display text-lg sm:text-xl text-gradient-gold">Murugesh</p>
               </div>
-              <div className="absolute -top-4 -right-4 bg-card/90 backdrop-blur-xl border border-gold/30 rounded-full px-5 py-3 shadow-2xl">
-                <p className="text-xs text-gold uppercase tracking-wider">⚡ Free Design Visit</p>
+              <div className="absolute -top-3 -right-2 sm:-top-4 sm:-right-4 bg-card/90 backdrop-blur-xl border border-gold/30 rounded-full px-4 py-2 sm:px-5 sm:py-3 shadow-2xl">
+                <p className="text-[10px] sm:text-xs text-gold uppercase tracking-wider">⚡ Free Design Visit</p>
               </div>
             </div>
           </Reveal>
