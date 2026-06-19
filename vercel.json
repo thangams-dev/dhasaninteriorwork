@@ -2,15 +2,16 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "installCommand": "npm install --legacy-peer-deps",
-  "headers": [
+  "functions": {
+    "api/**/*.{js,ts}": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  },
+  "rewrites": [
     {
-      "source": "/assets/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "max-age=31536000, immutable"
-        }
-      ]
+      "source": "/(?!(?:_next/|assets/|favicon\\.ico|robots\\.txt|sitemap\\.xml))",
+      "destination": "/index.html"
     }
   ]
 }
