@@ -171,9 +171,12 @@ function Home() {
 
           <div className="grid md:grid-cols-3 gap-5">
             {[
-              { img: kitchenModular.url, label: "Modular L-Kitchen", sub: "Walnut & Marble" },
-              { img: wallPartition.url, label: "Partition & Display", sub: "Solid Wood Slats" },
-              { img: kitchenYellow.url, label: "Bold Modular Kitchen", sub: "Sunshine Yellow + Graphite" },
+              { img: poojaUnit.url, label: "Traditional Pooja Unit", sub: "Teak Folding Mandir", alt: "Traditional teak folding-door pooja unit by Dhasan" },
+              { img: tvUnitWood.url, label: "Wood-Slat TV Wall", sub: "TV + Pooja Niche", alt: "Wood-slat TV unit with side pooja niche" },
+              { img: wardrobe.url, label: "Walnut Wardrobe", sub: "Built-in Dresser", alt: "Walnut wardrobe with built-in dresser by Dhasan" },
+              { img: pvcKitchen.url, label: "PVC Modular Kitchen", sub: "Glossy Magenta", alt: "Glossy magenta PVC modular kitchen" },
+              { img: poojaPartition.url, label: "Decorative Partition", sub: "Gold-Leaf Kamadhenu", alt: "Gold-leaf decorative partition with Kamadhenu motif" },
+              { img: kitchenModular.url, label: "Modular L-Kitchen", sub: "Walnut & Marble", alt: "Walnut and marble modular L-kitchen" },
             ].map((item, i) => (
               <Reveal key={i} delay={i * 120}>
                 <div className="group relative aspect-[4/5] rounded-2xl overflow-hidden border border-gold/15">
