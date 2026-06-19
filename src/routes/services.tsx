@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { Check, ChefHat, Sofa, Tv, Layers, BookOpen, Sparkles, ArrowRight, Bed, Briefcase, Hammer, Armchair, Droplets } from "lucide-react";
+import { getImageUrl } from "@/lib/image-utils";
 import kitchenYellow from "@/assets/kitchen-yellow.jpg.asset.json";
 import kitchenModular from "@/assets/kitchen-modular.jpg.asset.json";
 import wallPartition from "@/assets/wall-partition.jpg.asset.json";
@@ -25,7 +26,7 @@ export const Route = createFileRoute("/services")({
 const big = [
   {
     icon: ChefHat,
-    img: kitchenModular.url,
+    img: getImageUrl(kitchenModular),
     alt: "Modern walnut and marble modular kitchen by Dhasan Interior",
     title: "Modular Kitchen",
     tag: "Most loved",
@@ -34,7 +35,7 @@ const big = [
   },
   {
     icon: Droplets,
-    img: pvcKitchen.url,
+    img: getImageUrl(pvcKitchen),
     alt: "Glossy magenta PVC modular kitchen with frosted glass cabinets",
     title: "PVC Modular Kitchen",
     tag: "Waterproof",
@@ -43,7 +44,7 @@ const big = [
   },
   {
     icon: Layers,
-    img: wardrobe.url,
+    img: getImageUrl(wardrobe),
     alt: "Floor-to-ceiling walnut wardrobe with dresser and storage by Dhasan",
     title: "Wardrobe Design",
     tag: "Smart storage",
@@ -52,7 +53,7 @@ const big = [
   },
   {
     icon: Tv,
-    img: tvUnitWood.url,
+    img: getImageUrl(tvUnitWood),
     alt: "Wood-slat TV unit with backlit panels and pooja niche by Dhasan",
     title: "TV Unit Design",
     tag: "Statement walls",
@@ -61,7 +62,7 @@ const big = [
   },
   {
     icon: Sparkles,
-    img: poojaUnit.url,
+    img: getImageUrl(poojaUnit),
     alt: "Traditional teak pooja unit with shutter doors and god frames",
     title: "Pooja Units",
     tag: "Sacred spaces",
@@ -70,7 +71,7 @@ const big = [
   },
   {
     icon: Bed,
-    img: kitchenYellow.url,
+    img: getImageUrl(kitchenYellow),
     alt: "Sunshine yellow bedroom-side kitchen by Dhasan Interior",
     title: "Bedroom Interior",
     tag: "Restful spaces",

@@ -2,6 +2,7 @@ import { Link, Outlet, useRouterState } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, MessageCircle, Mail, MapPin } from "lucide-react";
 import logoAsset from "@/assets/logo.png.asset.json";
+import { getImageUrl } from "@/lib/image-utils";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -30,7 +31,7 @@ function Header() {
     <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/80 backdrop-blur-xl border-b border-gold/15 py-2" : "bg-transparent py-4"}`}>
       <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
-          <img src={logoAsset.url} alt="Dhasan Kitchen & Interior Work" className="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover ring-2 ring-gold/40 group-hover:ring-gold transition-all" />
+          <img src={getImageUrl(logoAsset)} alt="Dhasan Kitchen & Interior Work" className="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover ring-2 ring-gold/40 group-hover:ring-gold transition-all" />
           <div className="leading-tight">
             <div className="font-display text-lg text-gradient-gold">Dhasan</div>
             <div className="text-[10px] tracking-[0.25em] text-muted-foreground uppercase">Kitchen & Interior</div>
@@ -82,7 +83,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <img src={logoAsset.url} alt="logo" className="h-12 w-12 rounded-full ring-2 ring-gold/40" />
+            <img src={getImageUrl(logoAsset)} alt="logo" className="h-12 w-12 rounded-full ring-2 ring-gold/40" />
             <div>
               <div className="font-display text-xl text-gradient-gold">Dhasan</div>
               <div className="text-[10px] tracking-[0.25em] text-muted-foreground uppercase">Kitchen & Interior Work</div>

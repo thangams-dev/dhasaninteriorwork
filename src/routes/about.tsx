@@ -5,6 +5,7 @@ import logo from "@/assets/logo.png.asset.json";
 import interiorBanner from "@/assets/interior-banner.jpg.asset.json";
 import wardrobe from "@/assets/wardrobe-walnut.png.asset.json";
 import poojaPartition from "@/assets/pooja-partition-art.png.asset.json";
+import { getImageUrl } from "@/lib/image-utils";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -43,7 +44,7 @@ function About() {
     <>
       <section className="relative py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          <img src={interiorBanner.url} alt="" className="w-full h-full object-cover opacity-20" />
+          <img src={getImageUrl(interiorBanner)} alt="" className="w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/80 to-background" />
         </div>
         <div className="max-w-5xl mx-auto text-center">
@@ -76,7 +77,7 @@ function About() {
           <Reveal>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-gold/30 to-rose/20 rounded-3xl blur-2xl" />
-              <img src={poojaPartition.url} alt="Decorative gold leaf partition with tree of life and Kamadhenu cow motif by Dhasan" className="relative rounded-3xl border border-gold/30 w-full aspect-[3/4] object-cover" />
+              <img src={getImageUrl(poojaPartition)} alt="Decorative gold leaf partition with tree of life and Kamadhenu cow motif by Dhasan" className="relative rounded-3xl border border-gold/30 w-full aspect-[3/4] object-cover" />
             </div>
           </Reveal>
           <Reveal delay={150}>
@@ -148,7 +149,7 @@ function About() {
 
       <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto relative rounded-3xl overflow-hidden border-gold-glow">
-          <img src={wardrobe.url} alt="Custom walnut wardrobe with dressing mirror by Dhasan Interior" className="absolute inset-0 w-full h-full object-cover opacity-30" />
+          <img src={getImageUrl(wardrobe)} alt="Custom walnut wardrobe with dressing mirror by Dhasan Interior" className="absolute inset-0 w-full h-full object-cover opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/50" />
           <div className="relative p-10 sm:p-12 lg:p-20">
             <Reveal>

@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, ChefHat, Sofa, Tv, Layers, BookOpen, Wand2, Award, Clock, Heart, Star, Phone, MessageCircle, Droplets, Bed, Briefcase, Tag } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
+import { getImageUrl } from "@/lib/image-utils";
 import heroKitchen from "@/assets/hero-kitchen.jpg.asset.json";
 import kitchenYellow from "@/assets/kitchen-yellow.jpg.asset.json";
 import kitchenModular from "@/assets/kitchen-modular.jpg.asset.json";
@@ -97,7 +98,7 @@ function Home() {
             <div className="relative max-w-sm sm:max-w-md mx-auto lg:max-w-none">
               <div className="absolute -inset-6 bg-gradient-to-tr from-gold/20 via-transparent to-rose/20 rounded-3xl blur-2xl" />
               <div className="relative rounded-3xl overflow-hidden border-gold-glow animate-float">
-                <img src={heroKitchen.url} alt="Modern emerald modular kitchen by Dhasan" className="w-full aspect-[4/5] object-cover" />
+                <img src={getImageUrl(heroKitchen)} alt="Modern emerald modular kitchen by Dhasan" className="w-full aspect-[4/5] object-cover" />
               </div>
               <div className="absolute -bottom-4 -left-2 sm:-bottom-6 sm:-left-6 bg-card/90 backdrop-blur-xl border border-gold/30 rounded-2xl p-3 sm:p-4 shadow-2xl animate-float" style={{ animationDelay: "2s" }}>
                 <p className="text-[10px] sm:text-xs uppercase tracking-wider text-muted-foreground">Owned by</p>
@@ -219,7 +220,7 @@ function Home() {
           <Reveal>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-gold/20 to-rose/10 rounded-3xl blur-xl" />
-              <img src={wallPartition.url} alt="Wall partition work" className="relative rounded-3xl border border-gold/20" />
+              <img src={getImageUrl(wallPartition)} alt="Wall partition work" className="relative rounded-3xl border border-gold/20" />
             </div>
           </Reveal>
           <Reveal delay={150}>

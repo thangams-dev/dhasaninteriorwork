@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { Tag, Gift, Phone, MessageCircle, MapPin, Check, Sparkles } from "lucide-react";
 import pvcKitchen from "@/assets/pvc-kitchen-magenta.png.asset.json";
+import { getImageUrl } from "@/lib/image-utils";
 
 export const Route = createFileRoute("/offers")({
   head: () => ({
@@ -32,7 +33,7 @@ function Offers() {
     <>
       <section className="relative py-20 px-6 overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          <img src={pvcKitchen.url} alt="" className="w-full h-full object-cover opacity-15" />
+          <img src={getImageUrl(pvcKitchen)} alt="" className="w-full h-full object-cover opacity-15" />
           <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
         </div>
         <div className="max-w-5xl mx-auto text-center">
