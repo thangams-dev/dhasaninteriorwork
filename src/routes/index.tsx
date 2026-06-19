@@ -54,7 +54,7 @@ function Home() {
         <div className="max-w-7xl mx-auto px-5 sm:px-6 py-16 lg:py-0 grid lg:grid-cols-2 gap-10 lg:gap-12 items-center relative w-full">
           <Reveal>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-gold/40 bg-card/40 backdrop-blur text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
-              <Sparkles className="w-3.5 h-3.5 shrink-0" /> <span className="truncate">Tenkasi · Crafted with care</span>
+              <Sparkles className="w-3.5 h-3.5 shrink-0" /> <span className="truncate">Coimbatore · Tenkasi · Est. 2018</span>
             </div>
             <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl leading-[1.1] mb-5">
               Your dream <span className="text-gradient-gold italic">interior</span>,
