@@ -97,7 +97,7 @@ function Contact() {
                 <label className="text-xs uppercase tracking-wider text-muted-foreground mb-2 block">Interested in</label>
                 <select value={form.service} onChange={e => setForm({ ...form, service: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-background/60 border border-border focus:border-gold focus:outline-none transition">
-                  {["Modular Kitchen", "Wardrobe & Loft", "TV / Pooja Unit", "Living Room Interiors", "False Ceiling", "Complete Home Interior", "Not sure yet"].map(o => <option key={o}>{o}</option>)}
+                  {["Modular Kitchen", "Wardrobe & Loft", "TV / Pooja Unit", "Living Room Interiors", "Complete Home Interior", "Not sure yet"].map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
 
