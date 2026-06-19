@@ -1,10 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Sparkles, ChefHat, Sofa, Tv, Layers, BookOpen, Wand2, Award, Clock, Heart, Star, Phone, MessageCircle } from "lucide-react";
+import { ArrowRight, Sparkles, ChefHat, Sofa, Tv, Layers, BookOpen, Wand2, Award, Clock, Heart, Star, Phone, MessageCircle, Droplets, Bed, Briefcase, Tag } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import heroKitchen from "@/assets/hero-kitchen.jpg.asset.json";
 import kitchenYellow from "@/assets/kitchen-yellow.jpg.asset.json";
 import kitchenModular from "@/assets/kitchen-modular.jpg.asset.json";
 import wallPartition from "@/assets/wall-partition.jpg.asset.json";
+import tvUnitWood from "@/assets/tv-unit-wood.png.asset.json";
+import wardrobe from "@/assets/wardrobe-walnut.png.asset.json";
+import pvcKitchen from "@/assets/pvc-kitchen-magenta.png.asset.json";
+import poojaUnit from "@/assets/pooja-unit-traditional.png.asset.json";
+import poojaPartition from "@/assets/pooja-partition-art.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -19,12 +24,12 @@ export const Route = createFileRoute("/")({
 });
 
 const services = [
-  { icon: ChefHat, title: "Modular Kitchen", desc: "L-shape, U-shape, parallel and island layouts engineered for the way your family actually cooks." },
-  { icon: Layers, title: "Wardrobes & Loft", desc: "Floor-to-ceiling storage that hides the clutter and shows off the craftsmanship." },
-  { icon: Tv, title: "TV & Pooja Units", desc: "Statement walls that pull the whole living room together — backlit, textured, unforgettable." },
-  { icon: Sofa, title: "Living Room Interiors", desc: "Wood grains, partitions and panelling tuned to your space, your light, your story." },
-  { icon: Wand2, title: "False Ceiling", desc: "Subtle coves, dramatic drops and cove lighting that makes every ceiling feel custom." },
-  { icon: BookOpen, title: "Study Tables", desc: "Focused little corners for big ideas — ergonomic, clean-lined and built to last." },
+  { icon: ChefHat, title: "Modular Kitchen", desc: "L, U, parallel and island layouts engineered for the way your family actually cooks." },
+  { icon: Droplets, title: "PVC Modular Kitchen", desc: "Durable, waterproof and low-maintenance kitchens — bold finishes, easy upkeep." },
+  { icon: Layers, title: "Wardrobe Design", desc: "Floor-to-ceiling wardrobes with internal lighting and built-in dressers." },
+  { icon: Tv, title: "TV & Pooja Units", desc: "Statement walls — backlit, fluted, and built-in pooja niches you'll never want to hide." },
+  { icon: Bed, title: "Bedroom Interior", desc: "Cots, wardrobes, side storage and décor — a complete restful space, coordinated." },
+  { icon: Briefcase, title: "Office Interior", desc: "Workstations, cabins, reception walls and acoustic ceilings built for productivity." },
 ];
 
 const why = [
@@ -49,7 +54,7 @@ function Home() {
         <div className="max-w-7xl mx-auto px-5 sm:px-6 py-16 lg:py-0 grid lg:grid-cols-2 gap-10 lg:gap-12 items-center relative w-full">
           <Reveal>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-gold/40 bg-card/40 backdrop-blur text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
-              <Sparkles className="w-3.5 h-3.5 shrink-0" /> <span className="truncate">Tenkasi · Crafted with care</span>
+              <Sparkles className="w-3.5 h-3.5 shrink-0" /> <span className="truncate">Coimbatore · Tenkasi · Est. 2018</span>
             </div>
             <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl leading-[1.1] mb-5">
               Your dream <span className="text-gradient-gold italic">interior</span>,
@@ -119,6 +124,26 @@ function Home() {
         </div>
       </section>
 
+      {/* OFFER RIBBON */}
+      <section className="px-6 py-10">
+        <div className="max-w-6xl mx-auto rounded-2xl border border-gold/30 bg-gradient-luxury p-6 sm:p-8 flex flex-wrap items-center justify-between gap-5">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-xl bg-gold/15 border border-gold/30 flex items-center justify-center shrink-0">
+              <Tag className="w-5 h-5 text-gold" />
+            </div>
+            <div>
+              <p className="text-gold uppercase tracking-[0.25em] text-[10px] mb-1">🎉 Limited time</p>
+              <p className="font-display text-xl sm:text-2xl">Get up to <span className="text-gradient-gold italic">20% off</span> on selected interior & modular kitchen projects</p>
+            </div>
+          </div>
+          <Link to="/offers" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium hover:scale-105 transition shimmer whitespace-nowrap">
+            View offer <ArrowRight className="w-4 h-4" />
+            <span className="shimmer-overlay" />
+          </Link>
+        </div>
+      </section>
+
+
       {/* SERVICES PREVIEW */}
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
@@ -166,13 +191,16 @@ function Home() {
 
           <div className="grid md:grid-cols-3 gap-5">
             {[
-              { img: kitchenModular.url, label: "Modular L-Kitchen", sub: "Walnut & Marble" },
-              { img: wallPartition.url, label: "Partition & Display", sub: "Solid Wood Slats" },
-              { img: kitchenYellow.url, label: "Bold Modular Kitchen", sub: "Sunshine Yellow + Graphite" },
+              { img: poojaUnit.url, label: "Traditional Pooja Unit", sub: "Teak Folding Mandir", alt: "Traditional teak folding-door pooja unit by Dhasan" },
+              { img: tvUnitWood.url, label: "Wood-Slat TV Wall", sub: "TV + Pooja Niche", alt: "Wood-slat TV unit with side pooja niche" },
+              { img: wardrobe.url, label: "Walnut Wardrobe", sub: "Built-in Dresser", alt: "Walnut wardrobe with built-in dresser by Dhasan" },
+              { img: pvcKitchen.url, label: "PVC Modular Kitchen", sub: "Glossy Magenta", alt: "Glossy magenta PVC modular kitchen" },
+              { img: poojaPartition.url, label: "Decorative Partition", sub: "Gold-Leaf Kamadhenu", alt: "Gold-leaf decorative partition with Kamadhenu motif" },
+              { img: kitchenModular.url, label: "Modular L-Kitchen", sub: "Walnut & Marble", alt: "Walnut and marble modular L-kitchen" },
             ].map((item, i) => (
               <Reveal key={i} delay={i * 120}>
                 <div className="group relative aspect-[4/5] rounded-2xl overflow-hidden border border-gold/15">
-                  <img src={item.img} alt={item.label} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img src={item.img} alt={item.alt} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent opacity-90" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform">
                     <p className="text-xs text-gold uppercase tracking-wider mb-1">{item.sub}</p>

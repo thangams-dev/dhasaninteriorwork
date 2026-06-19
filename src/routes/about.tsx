@@ -1,17 +1,18 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
-import { Quote, Hammer, Compass, HeartHandshake, ArrowRight } from "lucide-react";
+import { Quote, Hammer, Compass, HeartHandshake, ArrowRight, MapPin, Award, Users, Calendar } from "lucide-react";
 import logo from "@/assets/logo.png.asset.json";
 import interiorBanner from "@/assets/interior-banner.jpg.asset.json";
-import wallPartition from "@/assets/wall-partition.jpg.asset.json";
+import wardrobe from "@/assets/wardrobe-walnut.png.asset.json";
+import poojaPartition from "@/assets/pooja-partition-art.png.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Dhasan — The Story Behind Tenkasi's Favourite Interior Studio" },
-      { name: "description", content: "Owned by Murugesh and a small team of craftsmen, Dhasan Kitchen & Interior Work has been shaping homes across Tenkasi with honest pricing and detail-obsessed workmanship." },
+      { title: "About Dhasan Interior — Founded 2018 by V. Mahendran | Coimbatore & Tenkasi" },
+      { name: "description", content: "Dhasan Interior is a trusted interior design and modular kitchen company founded in 2018 by Mr. V. Mahendran. 100+ projects across Coimbatore, Tenkasi & nearby areas." },
       { property: "og:title", content: "About Dhasan Kitchen & Interior Work" },
-      { property: "og:description", content: "Family-run, craftsmen-first interior studio in Tenkasi." },
+      { property: "og:description", content: "Founded 2018 by V. Mahendran. 100+ projects across Coimbatore & Tenkasi." },
     ],
   }),
   component: About,
@@ -23,11 +24,18 @@ const values = [
   { icon: HeartHandshake, t: "Long after handover", d: "We don't disappear when the invoice clears. Hinge feels off two years later? One call away." },
 ];
 
+const stats = [
+  { icon: Calendar, n: "2018", l: "Established" },
+  { icon: Award, n: "100+", l: "Projects Delivered" },
+  { icon: Users, n: "5.0", l: "Google Rating" },
+  { icon: MapPin, n: "2", l: "Cities Served" },
+];
+
 const timeline = [
-  { y: "Day 1", t: "Free home visit", d: "We measure, listen and sketch on the spot. No fee, no pressure." },
+  { y: "Day 1", t: "Free site visit", d: "We measure, listen and sketch on the spot. No fee, no pressure." },
   { y: "Week 1", t: "3D Design + Quote", d: "You see your space in 3D before a single board is cut. Transparent pricing." },
-  { y: "Production", t: "Factory-finished modules", d: "Built off-site for cleaner joints, dust-free home." },
-  { y: "Handover", t: "Installed & polished", d: "Site cleanup, walkthrough, warranty doc — keys back in your hand." },
+  { y: "Production", t: "Factory-finished modules", d: "Built off-site for cleaner joints and a dust-free home." },
+  { y: "Handover", t: "Installed & polished", d: "Site cleanup, walkthrough, warranty — keys back in your hand." },
 ];
 
 function About() {
@@ -41,31 +49,45 @@ function About() {
         <div className="max-w-5xl mx-auto text-center">
           <Reveal>
             <p className="text-gold uppercase tracking-[0.3em] text-xs mb-4">Our story</p>
-            <h1 className="font-display text-5xl sm:text-7xl mb-6 leading-tight">A small Tenkasi studio with a <span className="text-gradient-gold italic">big love for homes.</span></h1>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">Dhasan Kitchen & Interior Work was started by Murugesh on a simple belief: every family — no matter the budget — deserves an interior that feels intentional, lasts decades, and welcomes them home at the end of every day.</p>
+            <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl mb-6 leading-tight">Crafting dream interiors <span className="text-gradient-gold italic">with perfection.</span></h1>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Dhasan Interior is a trusted interior design and modular kitchen company founded in <strong className="text-foreground">2018 by Mr. V. Mahendran</strong>. We specialize in creating beautiful, functional, and modern living spaces that perfectly match our clients' needs and lifestyles. With over 100 successful projects, we proudly serve customers across <strong className="text-foreground">Coimbatore, Tenkasi</strong>, and surrounding areas.
+            </p>
           </Reveal>
         </div>
       </section>
 
-      <section className="py-20 px-6">
+      <section className="py-16 px-6">
+        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {stats.map((s, i) => (
+            <Reveal key={i} delay={i * 80}>
+              <div className="p-6 rounded-2xl bg-card/60 backdrop-blur border border-gold/15 text-center hover:border-gold/40 transition">
+                <s.icon className="w-7 h-7 text-gold mx-auto mb-3" />
+                <div className="font-display text-3xl text-gradient-gold">{s.n}</div>
+                <p className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">{s.l}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <Reveal>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-gold/30 to-rose/20 rounded-3xl blur-2xl" />
-              <img src={logo.url} alt="Dhasan logo" className="relative rounded-3xl border border-gold/30 animate-float" />
+              <img src={poojaPartition.url} alt="Decorative gold leaf partition with tree of life and Kamadhenu cow motif by Dhasan" className="relative rounded-3xl border border-gold/30 w-full aspect-[3/4] object-cover" />
             </div>
           </Reveal>
           <Reveal delay={150}>
             <Quote className="w-10 h-10 text-gold mb-6" />
             <p className="font-display text-2xl sm:text-3xl leading-relaxed mb-6 text-foreground/95">
-              "I grew up watching my father work wood. Every plank had a story, every joint had to be perfect — even the ones you'd never see. That's the standard we carry into every home we touch."
+              "Every family — no matter the budget — deserves an interior that feels intentional, lasts decades, and welcomes them home at the end of every day."
             </p>
-            <p className="text-gold font-medium">— Murugesh, Founder</p>
-            <div className="mt-10 grid grid-cols-3 gap-6">
-              <div><div className="font-display text-3xl text-gradient-gold">100+</div><p className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Projects</p></div>
-              <div><div className="font-display text-3xl text-gradient-gold">5.0</div><p className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Google Rating</p></div>
-              <div><div className="font-display text-3xl text-gradient-gold">24/7</div><p className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Support</p></div>
-            </div>
+            <p className="text-gold font-medium">— V. Mahendran, Founder · Dhasan Interior</p>
+            <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
+              From a single workshop in 2018 to 100+ completed homes across Tamil Nadu, our promise hasn't changed: quality craftsmanship, premium materials, and timely delivery — every single project.
+            </p>
           </Reveal>
         </div>
       </section>
@@ -126,11 +148,11 @@ function About() {
 
       <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto relative rounded-3xl overflow-hidden border-gold-glow">
-          <img src={wallPartition.url} alt="" className="absolute inset-0 w-full h-full object-cover opacity-30" />
+          <img src={wardrobe.url} alt="Custom walnut wardrobe with dressing mirror by Dhasan Interior" className="absolute inset-0 w-full h-full object-cover opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/50" />
-          <div className="relative p-12 lg:p-20">
+          <div className="relative p-10 sm:p-12 lg:p-20">
             <Reveal>
-              <h2 className="font-display text-4xl sm:text-5xl mb-6 max-w-2xl">Ready to meet the team that'll <span className="text-gradient-gold italic">build your home?</span></h2>
+              <h2 className="font-display text-3xl sm:text-5xl mb-6 max-w-2xl">Ready to meet the team that'll <span className="text-gradient-gold italic">build your home?</span></h2>
               <Link to="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium hover:scale-105 transition">
                 Book a free visit <ArrowRight className="w-4 h-4" />
               </Link>
