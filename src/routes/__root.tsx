@@ -3,13 +3,10 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
-  HeadContent,
-  Scripts,
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
+import { type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
   return (
@@ -36,9 +33,6 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-  useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -76,15 +70,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Dhasan Kitchen & Interior Work — Modular Kitchens & Home Interiors in Tenkasi" },
-      { name: "description", content: "Tenkasi's trusted modular kitchen & home interior studio. Wardrobes, TV units, false ceilings, study tables & complete living solutions crafted with premium materials." },
+      { title: "Dhasan Kitchen & Interior Work — Modular Kitchens & Home Interiors in Coimbatore" },
+      { name: "description", content: "Coimbatore's trusted modular kitchen & home interior studio. Wardrobes, TV units, study tables & complete living solutions crafted with premium materials." },
       { name: "author", content: "Dhasan Kitchen & Interior Work" },
-      { property: "og:title", content: "Dhasan Kitchen & Interior Work — Modular Kitchens & Home Interiors in Tenkasi" },
-      { property: "og:description", content: "Tenkasi's trusted modular kitchen & home interior studio. Wardrobes, TV units, false ceilings, study tables & complete living solutions crafted with premium materials." },
+      { property: "og:title", content: "Dhasan Kitchen & Interior Work — Modular Kitchens & Home Interiors in Coimbatore" },
+      { property: "og:description", content: "Coimbatore and Tenkasi's trusted modular kitchen & home interior studio. Wardrobes, TV units, study tables & complete living solutions crafted with premium materials." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Dhasan Kitchen & Interior Work — Modular Kitchens & Home Interiors in Tenkasi" },
-      { name: "twitter:description", content: "Tenkasi's trusted modular kitchen & home interior studio. Wardrobes, TV units, false ceilings, study tables & complete living solutions crafted with premium materials." },
+      { name: "twitter:title", content: "Dhasan Kitchen & Interior Work — Modular Kitchens & Home Interiors in Coimbatore" },
+      { name: "twitter:description", content: "Coimbatore and Tenkasi's trusted modular kitchen & home interior studio. Wardrobes, TV units, study tables & complete living solutions crafted with premium materials." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/f505238e-7c34-4e61-a84f-e7edc6b5cc2a" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/f505238e-7c34-4e61-a84f-e7edc6b5cc2a" },
     ],
@@ -95,25 +89,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" },
     ],
   }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
-
-function RootShell({ children }: { children: ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
 import Layout from "../components/Layout";
 
