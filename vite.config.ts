@@ -9,8 +9,11 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   tanstackStart: {
     ssr: false,
-  },  vite: {
-    define: {
-      'process.env.NITRO_PRESET': JSON.stringify('node'),
+  },
+  vite: {
+    build: {
+      outDir: 'dist',
+      emptyOutDir: true,
     },
-  },});
+  },
+});
