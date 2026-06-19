@@ -124,6 +124,26 @@ function Home() {
         </div>
       </section>
 
+      {/* OFFER RIBBON */}
+      <section className="px-6 py-10">
+        <div className="max-w-6xl mx-auto rounded-2xl border border-gold/30 bg-gradient-luxury p-6 sm:p-8 flex flex-wrap items-center justify-between gap-5">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-xl bg-gold/15 border border-gold/30 flex items-center justify-center shrink-0">
+              <Tag className="w-5 h-5 text-gold" />
+            </div>
+            <div>
+              <p className="text-gold uppercase tracking-[0.25em] text-[10px] mb-1">🎉 Limited time</p>
+              <p className="font-display text-xl sm:text-2xl">Get up to <span className="text-gradient-gold italic">20% off</span> on selected interior & modular kitchen projects</p>
+            </div>
+          </div>
+          <Link to="/offers" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium hover:scale-105 transition shimmer whitespace-nowrap">
+            View offer <ArrowRight className="w-4 h-4" />
+            <span className="shimmer-overlay" />
+          </Link>
+        </div>
+      </section>
+
+
       {/* SERVICES PREVIEW */}
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
