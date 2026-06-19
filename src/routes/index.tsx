@@ -1,10 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Sparkles, ChefHat, Sofa, Tv, Layers, BookOpen, Wand2, Award, Clock, Heart, Star, Phone, MessageCircle } from "lucide-react";
+import { ArrowRight, Sparkles, ChefHat, Sofa, Tv, Layers, BookOpen, Wand2, Award, Clock, Heart, Star, Phone, MessageCircle, Droplets, Bed, Briefcase, Tag } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import heroKitchen from "@/assets/hero-kitchen.jpg.asset.json";
 import kitchenYellow from "@/assets/kitchen-yellow.jpg.asset.json";
 import kitchenModular from "@/assets/kitchen-modular.jpg.asset.json";
 import wallPartition from "@/assets/wall-partition.jpg.asset.json";
+import tvUnitWood from "@/assets/tv-unit-wood.png.asset.json";
+import wardrobe from "@/assets/wardrobe-walnut.png.asset.json";
+import pvcKitchen from "@/assets/pvc-kitchen-magenta.png.asset.json";
+import poojaUnit from "@/assets/pooja-unit-traditional.png.asset.json";
+import poojaPartition from "@/assets/pooja-partition-art.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -19,12 +24,12 @@ export const Route = createFileRoute("/")({
 });
 
 const services = [
-  { icon: ChefHat, title: "Modular Kitchen", desc: "L-shape, U-shape, parallel and island layouts engineered for the way your family actually cooks." },
-  { icon: Layers, title: "Wardrobes & Loft", desc: "Floor-to-ceiling storage that hides the clutter and shows off the craftsmanship." },
-  { icon: Tv, title: "TV & Pooja Units", desc: "Statement walls that pull the whole living room together — backlit, textured, unforgettable." },
-  { icon: Sofa, title: "Living Room Interiors", desc: "Wood grains, partitions and panelling tuned to your space, your light, your story." },
-  { icon: Wand2, title: "False Ceiling", desc: "Subtle coves, dramatic drops and cove lighting that makes every ceiling feel custom." },
-  { icon: BookOpen, title: "Study Tables", desc: "Focused little corners for big ideas — ergonomic, clean-lined and built to last." },
+  { icon: ChefHat, title: "Modular Kitchen", desc: "L, U, parallel and island layouts engineered for the way your family actually cooks." },
+  { icon: Droplets, title: "PVC Modular Kitchen", desc: "Durable, waterproof and low-maintenance kitchens — bold finishes, easy upkeep." },
+  { icon: Layers, title: "Wardrobe Design", desc: "Floor-to-ceiling wardrobes with internal lighting and built-in dressers." },
+  { icon: Tv, title: "TV & Pooja Units", desc: "Statement walls — backlit, fluted, and built-in pooja niches you'll never want to hide." },
+  { icon: Bed, title: "Bedroom Interior", desc: "Cots, wardrobes, side storage and décor — a complete restful space, coordinated." },
+  { icon: Briefcase, title: "Office Interior", desc: "Workstations, cabins, reception walls and acoustic ceilings built for productivity." },
 ];
 
 const why = [
