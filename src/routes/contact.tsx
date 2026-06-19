@@ -6,10 +6,10 @@ import { Phone, MessageCircle, Mail, MapPin, Clock, Send, CheckCircle2 } from "l
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Dhasan — Free Design Consultation in Tenkasi" },
-      { name: "description", content: "Call 70105 74483 or WhatsApp 95245 43097. Free home visit & design consultation across Tenkasi and surrounding areas." },
+      { title: "Contact Dhasan — Free Design Consultation in Coimbatore" },
+      { name: "description", content: "Call 9442723200 or WhatsApp 6382543774. Free home visit & design consultation across Coimbatore and surrounding areas." },
       { property: "og:title", content: "Contact Dhasan Kitchen & Interior Work" },
-      { property: "og:description", content: "Free design consultation. Open 24 hours. Tenkasi, Tamil Nadu." },
+      { property: "og:description", content: "Free design consultation. Open 24 hours. Coimbatore, Tamil Nadu." },
     ],
   }),
   component: Contact,
@@ -24,7 +24,7 @@ function Contact() {
     const text = encodeURIComponent(
       `Hi Dhasan! I'm ${form.name || "(name)"}.\nPhone: ${form.phone}\nService: ${form.service}\n\n${form.message}`
     );
-    const url = `https://wa.me/919524543097?text=${text}`;
+    const url = `https://wa.me/916382543774?text=${text}`;
     setSent(true);
     // Use direct navigation as a fallback when popups are blocked
     const win = window.open(url, "_blank", "noopener,noreferrer");
@@ -48,10 +48,10 @@ function Contact() {
           <Reveal className="lg:col-span-2">
             <div className="space-y-5 sticky top-28">
               {[
-                { icon: Phone, t: "Call us", v: "70105 74483", h: "tel:7010574483", sub: "Open 24 hours" },
-                { icon: MessageCircle, t: "WhatsApp", v: "95245 43097", h: "https://wa.me/919524543097", sub: "Fastest response" },
+                { icon: Phone, t: "Call us", v: "9442723200", h: "tel:9442723200", sub: "Open 24 hours" },
+                { icon: MessageCircle, t: "WhatsApp", v: "6382543774", h: "https://wa.me/916382543774", sub: "Fastest response" },
                 { icon: Mail, t: "Email", v: "mugeshmugesh9524@gmail.com", h: "mailto:mugeshmugesh9524@gmail.com", sub: "Replies within 24h" },
-                { icon: MapPin, t: "Studio", v: "162-8, South Colony, Keezhpattakurichi, Tenkasi, TN 627814", h: "https://maps.google.com/?q=DHASAN+KITCHEN+%26+INTERIOR+WORK+Tenkasi", sub: "Serving Tenkasi & surrounds" },
+                { icon: MapPin, t: "Studio", v: "1/174 E, Golden Park, Somayam Palayam, Coimbatore North, Coimbatore, Tamilnadu - 641041", h: "https://maps.google.com/?q=DHASAN+KITCHEN+%26+INTERIOR+WORK+Coimbatore", sub: "Serving Coimbatore & surrounds" },
                 { icon: Clock, t: "Hours", v: "Open 24 hours · All days", sub: "Emergency support included" },
               ].map((c, i) => {
                 const Wrap: any = c.h ? "a" : "div";

@@ -50,7 +50,7 @@ function Header() {
           })}
         </nav>
 
-        <a href="tel:7010574483" className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium text-sm hover:scale-105 transition-transform shimmer">
+        <a href="tel:9442723200" className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium text-sm hover:scale-105 transition-transform shimmer">
           <Phone className="w-4 h-4" /> Book Free Visit
           <span className="shimmer-overlay" />
         </a>
@@ -66,8 +66,8 @@ function Header() {
             {nav.map(n => (
               <Link key={n.to} to={n.to} className="py-3 px-4 rounded-lg hover:bg-secondary text-foreground/90 uppercase text-sm tracking-wider">{n.label}</Link>
             ))}
-            <a href="tel:7010574483" className="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium">
-              <Phone className="w-4 h-4" /> Call 70105 74483
+            <a href="tel:9442723200" className="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium">
+              <Phone className="w-4 h-4" /> Call 9442723200
             </a>
           </div>
         </div>
@@ -101,9 +101,9 @@ function Footer() {
         <div>
           <h4 className="text-gold uppercase tracking-wider text-sm mb-4">Reach Us</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
-            <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 text-gold shrink-0" /> 162-8, South Colony, Keezhpattakurichi, Tenkasi, TN 627814</li>
-            <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-gold" /> <a href="tel:7010574483" className="hover:text-gold">70105 74483</a></li>
-            <li className="flex items-center gap-2"><MessageCircle className="w-4 h-4 text-gold" /> <a href="https://wa.me/919524543097" className="hover:text-gold">95245 43097</a></li>
+            <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 text-gold shrink-0" /> 1/174 E, Golden Park, Somayam Palayam, Coimbatore North, Coimbatore, Tamilnadu - 641041</li>
+            <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-gold" /> <a href="tel:9442723200" className="hover:text-gold">9442723200</a></li>
+            <li className="flex items-center gap-2"><MessageCircle className="w-4 h-4 text-gold" /> <a href="https://wa.me/916382543774" className="hover:text-gold">6382543774</a></li>
             <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-gold" /> <a href="mailto:mugeshmugesh9524@gmail.com" className="hover:text-gold break-all">mugeshmugesh9524@gmail.com</a></li>
           </ul>
         </div>
@@ -114,11 +114,11 @@ function Footer() {
             <a href="#" className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-colors"><Instagram className="w-4 h-4" /></a>
             <a href="#" className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-colors"><Facebook className="w-4 h-4" /></a>
           </div>
-          <p className="text-xs text-muted-foreground mt-6">Open 24 hours · Serving Tenkasi & surrounding areas</p>
+          <p className="text-xs text-muted-foreground mt-6">Open 24 hours · Serving Coimbatore & surrounding areas</p>
         </div>
       </div>
       <div className="border-t border-gold/10 py-5 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Dhasan Kitchen & Interior Work · Crafted with care in Tenkasi
+        © {new Date().getFullYear()} Dhasan Kitchen & Interior Work · Crafted with care in Coimbatore
       </div>
     </footer>
   );
@@ -127,10 +127,10 @@ function Footer() {
 export function FloatingActions() {
   return (
     <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
-      <a href="https://wa.me/919524543097" className="w-14 h-14 rounded-full bg-green-500 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform animate-glow" aria-label="WhatsApp">
+      <a href="https://wa.me/916382543774" className="w-14 h-14 rounded-full bg-green-500 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform animate-glow" aria-label="WhatsApp">
         <MessageCircle className="w-6 h-6" />
       </a>
-      <a href="tel:7010574483" className="w-14 h-14 rounded-full bg-gradient-to-br from-gold to-gold-soft text-primary-foreground flex items-center justify-center shadow-2xl hover:scale-110 transition-transform" aria-label="Call">
+      <a href="tel:9442723200" className="w-14 h-14 rounded-full bg-gradient-to-br from-gold to-gold-soft text-primary-foreground flex items-center justify-center shadow-2xl hover:scale-110 transition-transform" aria-label="Call">
         <Phone className="w-6 h-6" />
       </a>
     </div>
