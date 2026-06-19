@@ -1,4 +1,11 @@
 {
   "buildCommand": "npm run build",
-  "installCommand": "npm install --legacy-peer-deps"
+  "outputDirectory": "dist",
+  "installCommand": "npm install --legacy-peer-deps",
+  "rewrites": [
+    {
+      "source": "/((?!_next/|_static/|[^\\.].*\\.\\w+$).*)",
+      "destination": "/index.html"
+    }
+  ]
 }

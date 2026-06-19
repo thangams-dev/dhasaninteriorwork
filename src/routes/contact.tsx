@@ -51,7 +51,7 @@ function Contact() {
                 { icon: Phone, t: "Call us", v: "9442723200", h: "tel:9442723200", sub: "Open 24 hours" },
                 { icon: MessageCircle, t: "WhatsApp", v: "6382543774", h: "https://wa.me/916382543774", sub: "Fastest response" },
                 { icon: Mail, t: "Email", v: "mugeshmugesh9524@gmail.com", h: "mailto:mugeshmugesh9524@gmail.com", sub: "Replies within 24h" },
-                { icon: MapPin, t: "Studio", v: "1/174 E, Golden Park, Somayam Palayam, Coimbatore North, Coimbatore, Tamilnadu - 641041", h: "https://maps.google.com/?q=DHASAN+KITCHEN+%26+INTERIOR+WORK+Coimbatore", sub: "Serving Coimbatore & surrounds" },
+                { icon: MapPin, t: "Studio", v: "1/174 E, Golden Park, Somayam Palayam, Coimbatore North, Coimbatore, Tamilnadu - 641041", h: "https://maps.google.com/?q=DHASAN+KITCHEN+%26+INTERIOR+WORK+Coimbatore", sub: "Serving Coimbatore and Tenkasi and surrounds" },
                 { icon: Clock, t: "Hours", v: "Open 24 hours · All days", sub: "Emergency support included" },
               ].map((c, i) => {
                 const Wrap: any = c.h ? "a" : "div";

@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
-import { Check, ChefHat, Sofa, Tv, Layers, BookOpen, Wand2, Sparkles, ArrowRight, Bed, Briefcase, Hammer, Armchair, Droplets } from "lucide-react";
+import { Check, ChefHat, Sofa, Tv, Layers, BookOpen, Sparkles, ArrowRight, Bed, Briefcase, Hammer, Armchair, Droplets } from "lucide-react";
 import kitchenYellow from "@/assets/kitchen-yellow.jpg.asset.json";
 import kitchenModular from "@/assets/kitchen-modular.jpg.asset.json";
 import wallPartition from "@/assets/wall-partition.jpg.asset.json";
@@ -98,7 +98,6 @@ const big = [
 ];
 
 const small = [
-  { icon: Wand2, t: "False Ceiling", d: "Gypsum & POP designs with cove lighting." },
   { icon: BookOpen, t: "Study Tables", d: "Ergonomic study setups for kids & WFH." },
   { icon: Armchair, t: "Wooden Cots & Beds", d: "Solid wood beds with built-in storage drawers." },
   { icon: Hammer, t: "Dining Tables", d: "Custom 4 / 6 / 8-seater dining sets." },

@@ -1,6 +1,6 @@
 import { Link, Outlet, useRouterState } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
-import { Menu, X, Phone, MessageCircle, Mail, MapPin, Instagram, Facebook } from "lucide-react";
+import { Menu, X, Phone, MessageCircle, Mail, MapPin } from "lucide-react";
 import logoAsset from "@/assets/logo.png.asset.json";
 
 const nav = [
@@ -106,15 +106,7 @@ function Footer() {
             <li className="flex items-center gap-2"><MessageCircle className="w-4 h-4 text-gold" /> <a href="https://wa.me/916382543774" className="hover:text-gold">6382543774</a></li>
             <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-gold" /> <a href="mailto:mugeshmugesh9524@gmail.com" className="hover:text-gold break-all">mugeshmugesh9524@gmail.com</a></li>
           </ul>
-        </div>
-
-        <div>
-          <h4 className="text-gold uppercase tracking-wider text-sm mb-4">Follow</h4>
-          <div className="flex gap-3">
-            <a href="#" className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-colors"><Instagram className="w-4 h-4" /></a>
-            <a href="#" className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-colors"><Facebook className="w-4 h-4" /></a>
-          </div>
-          <p className="text-xs text-muted-foreground mt-6">Open 24 hours · Serving Coimbatore & surrounding areas</p>
+          <p className="text-xs text-muted-foreground mt-6">Open 24 hours · Serving Coimbatore and Tenkasi and surrounding areas</p>
         </div>
       </div>
       <div className="border-t border-gold/10 py-5 text-center text-xs text-muted-foreground">
