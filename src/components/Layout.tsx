@@ -31,9 +31,9 @@ function Header() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
           <img src={logoAsset.url} alt="Dhasan Kitchen & Interior Work" className="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover ring-2 ring-gold/40 group-hover:ring-gold transition-all" />
-          <div className="hidden sm:block leading-tight">
+          <div className="leading-tight">
             <div className="font-display text-lg text-gradient-gold">Dhasan</div>
-            <div className="text-[10px] tracking-[0.25em] text-muted-foreground uppercase">Interior Work</div>
+            <div className="text-[10px] tracking-[0.25em] text-muted-foreground uppercase">Kitchen & Interior</div>
           </div>
         </Link>
 
@@ -85,7 +85,7 @@ function Footer() {
             <img src={logoAsset.url} alt="logo" className="h-12 w-12 rounded-full ring-2 ring-gold/40" />
             <div>
               <div className="font-display text-xl text-gradient-gold">Dhasan</div>
-              <div className="text-[10px] tracking-[0.25em] text-muted-foreground uppercase">Living Solutions</div>
+              <div className="text-[10px] tracking-[0.25em] text-muted-foreground uppercase">Kitchen & Interior Work</div>
             </div>
           </div>
           <p className="text-sm text-muted-foreground leading-relaxed">Crafting timeless modular kitchens & interiors that turn houses into the homes you've always pictured.</p>
