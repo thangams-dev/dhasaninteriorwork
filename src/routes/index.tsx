@@ -180,7 +180,7 @@ function Home() {
             ].map((item, i) => (
               <Reveal key={i} delay={i * 120}>
                 <div className="group relative aspect-[4/5] rounded-2xl overflow-hidden border border-gold/15">
-                  <img src={item.img} alt={item.label} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img src={item.img} alt={item.alt} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent opacity-90" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform">
                     <p className="text-xs text-gold uppercase tracking-wider mb-1">{item.sub}</p>
