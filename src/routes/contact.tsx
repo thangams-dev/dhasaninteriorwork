@@ -94,7 +94,7 @@ function Contact() {
             <form onSubmit={submit} className="p-8 sm:p-10 rounded-3xl bg-card/60 backdrop-blur border-gold-glow space-y-6">
               <div>
                 <h2 className="font-display text-3xl mb-2">Request a free visit</h2>
-                <p className="text-sm text-muted-foreground">Submitting opens WhatsApp with your message pre-filled — fastest way to reach Murugesh.</p>
+                <p className="text-sm text-muted-foreground">Submitting opens WhatsApp with your message pre-filled — fastest way to reach Mr. V. Mahendran.</p>
               </div>
 
               <div className="grid sm:grid-cols-2 gap-5">

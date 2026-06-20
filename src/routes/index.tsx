@@ -61,7 +61,7 @@ function Home() {
               <br className="hidden sm:block" /> built around <span className="text-gradient-gold">your life.</span>
             </h1>
             <p className="text-base sm:text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed">
-              Modular kitchens, wardrobes, false ceilings and full home interiors — handcrafted in Tenkasi by Murugesh and the Dhasan team. No templates. No shortcuts. Just rooms you'll never want to leave.
+              Modular kitchens, wardrobes, false ceilings and full home interiors — handcrafted in Tenkasi by Mr. V. Mahendran and the Dhasan team. No templates. No shortcuts. Just rooms you'll never want to leave.
             </p>
             <div className="flex flex-wrap gap-3 sm:gap-4">
               <Link to="/contact" className="group inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium text-sm sm:text-base hover:scale-105 transition-transform shimmer">
@@ -101,7 +101,7 @@ function Home() {
               </div>
               <div className="absolute -bottom-4 -left-2 sm:-bottom-6 sm:-left-6 bg-card/90 backdrop-blur-xl border border-gold/30 rounded-2xl p-3 sm:p-4 shadow-2xl animate-float" style={{ animationDelay: "2s" }}>
                 <p className="text-[10px] sm:text-xs uppercase tracking-wider text-muted-foreground">Owned by</p>
-                <p className="font-display text-lg sm:text-xl text-gradient-gold">Murugesh</p>
+                <p className="font-display text-lg sm:text-xl text-gradient-gold">Mr. V. Mahendran</p>
               </div>
               <div className="absolute -top-3 -right-2 sm:-top-4 sm:-right-4 bg-card/90 backdrop-blur-xl border border-gold/30 rounded-full px-4 py-2 sm:px-5 sm:py-3 shadow-2xl">
                 <p className="text-[10px] sm:text-xs text-gold uppercase tracking-wider">⚡ Free Design Visit</p>
@@ -253,7 +253,7 @@ function Home() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { name: "Santhini Murugesh", text: "Excellent work in low price. Workers are so kindly. Thanks Dhasan Interior 👏" },
-              { name: "Bala Mani", text: "Beautiful finishing on the kitchen and TV unit — Murugesh sir really cares about getting the small details right." },
+              { name: "Bala Mani", text: "Beautiful finishing on the kitchen and TV unit — Mr. V. Mahendran really cares about getting the small details right." },
             ].map((r, i) => (
               <Reveal key={i} delay={i * 120}>
                 <div className="p-8 rounded-2xl bg-card/70 backdrop-blur border border-gold/20 text-left">
