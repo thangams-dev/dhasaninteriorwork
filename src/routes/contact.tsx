@@ -8,9 +8,15 @@ export const Route = createFileRoute("/contact")({
     meta: [
       { title: "Contact Dhasan — Free Design Consultation in Coimbatore" },
       { name: "description", content: "Call 9442723200 or WhatsApp 6382543774. Free home visit & design consultation across Coimbatore and surrounding areas." },
+      { name: "keywords", content: "contact Dhasan, book consultation, interior designer contact, modular kitchen inquiry, free design consultation, Coimbatore interior design, Tenkasi interior design" },
+      { name: "author", content: "Dhasan Kitchen & Interior Work" },
       { property: "og:title", content: "Contact Dhasan Kitchen & Interior Work" },
-      { property: "og:description", content: "Free design consultation. Open 24 hours. Coimbatore, Tamil Nadu." },
-    ],
+      { property: "og:description", content: "Get in touch for free home visit & design consultation. 24/7 available." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://www.dhasankitchenandinteriors.in/contact" },
+      { property: "og:site_name", content: "Dhasan Kitchen & Interior Work" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ], links: [{ rel: "canonical", href: "https://www.dhasankitchenandinteriors.in/contact" }],"
   }),
   component: Contact,
 });

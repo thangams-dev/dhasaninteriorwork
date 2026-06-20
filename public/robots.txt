@@ -1,2 +1,18 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Google Search Console
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
+Sitemap: https://www.dhasankitchenandinteriors.in/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1

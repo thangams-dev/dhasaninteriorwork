@@ -17,10 +17,15 @@ export const Route = createFileRoute("/gallery")({
     meta: [
       { title: "Gallery — Recent Interior Projects | Dhasan Kitchen & Interior Work" },
       { name: "description", content: "Browse 100+ completed projects: modular kitchens, PVC kitchens, wardrobes, TV units, pooja rooms and decorative partitions across Coimbatore & Tenkasi." },
+      { name: "keywords", content: "interior project gallery, modular kitchen gallery, wardrobe designs, TV unit designs, pooja unit gallery, home interior photos, before after interiors, completed projects, interior inspiration" },
+      { name: "author", content: "Dhasan Kitchen & Interior Work" },
       { property: "og:title", content: "Project Gallery — Dhasan Interior Work" },
-      { property: "og:description", content: "A peek inside the homes we've crafted." },
-    ],
-    links: [{ rel: "canonical", href: "https://dhasaninteriorwork.lovable.app/gallery" }],
+      { property: "og:description", content: "A peek inside the homes we've crafted. 100+ successful projects." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://www.dhasankitchenandinteriors.in/gallery" },
+      { property: "og:site_name", content: "Dhasan Kitchen & Interior Work" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ], links: [{ rel: "canonical", href: "https://www.dhasankitchenandinteriors.in/gallery" }],"
   }),
   component: Gallery,
 });

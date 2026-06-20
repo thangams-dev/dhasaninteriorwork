@@ -15,9 +15,15 @@ export const Route = createFileRoute("/services")({
     meta: [
       { title: "Services — Modular Kitchen, PVC Kitchen, Wardrobes, TV & Pooja Units | Dhasan Interior" },
       { name: "description", content: "Modular kitchen, PVC modular kitchen, wardrobe design, TV units, pooja units, bedroom & office interiors, home renovation and custom furniture in Coimbatore & Tenkasi." },
+      { name: "keywords", content: "modular kitchen services, PVC kitchen design, wardrobe design, TV unit installation, pooja unit design, home interior services, bedroom interiors, office interiors, kitchen renovation services, interior design services Tenkasi, custom furniture" },
+      { name: "author", content: "Dhasan Kitchen & Interior Work" },
       { property: "og:title", content: "Our Services — Dhasan Interior Work" },
-      { property: "og:description", content: "Every interior need, under one trusted roof." },
-    ],
+      { property: "og:description", content: "Every interior need, under one trusted roof. Modular kitchens, wardrobes, TV units, pooja units & more." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://www.dhasankitchenandinteriors.in/services" },
+      { property: "og:site_name", content: "Dhasan Kitchen & Interior Work" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ], links: [{ rel: "canonical", href: "https://www.dhasankitchenandinteriors.in/services" }],"
   }),
   component: Services,
 });

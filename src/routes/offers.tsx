@@ -8,10 +8,16 @@ export const Route = createFileRoute("/offers")({
     meta: [
       { title: "Special Offers — Up to 20% Off Modular Kitchens & Interiors | Dhasan" },
       { name: "description", content: "Festive offer: Get up to 20% discount on selected interior and modular kitchen projects. Free site visit and consultation across Coimbatore & Tenkasi." },
+      { name: "keywords", content: "special offers, discount kitchen, modular kitchen deals, interior design offers, seasonal discounts, festive offers, kitchen discounts Coimbatore, affordable interiors" },
+      { name: "author", content: "Dhasan Kitchen & Interior Work" },
       { property: "og:title", content: "Special Offers — Dhasan Interior Work" },
-      { property: "og:description", content: "Up to 20% off on selected projects. Limited time." },
+      { property: "og:description", content: "Up to 20% off on selected projects. Limited time offer. Book now!" },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://www.dhasankitchenandinteriors.in/offers" },
+      { property: "og:site_name", content: "Dhasan Kitchen & Interior Work" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://dhasaninteriorwork.lovable.app/offers" }],
+    links: [{ rel: "canonical", href: "https://www.dhasankitchenandinteriors.in/offers" }],
   }),
   component: Offers,
 });
