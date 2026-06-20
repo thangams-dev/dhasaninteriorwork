@@ -50,7 +50,7 @@ function Contact() {
               {[
                 { icon: Phone, t: "Call us", v: "9442723200", h: "tel:9442723200", sub: "Open 24 hours" },
                 { icon: MessageCircle, t: "WhatsApp", v: "6382543774", h: "https://wa.me/916382543774", sub: "Fastest response" },
-                { icon: Mail, t: "Email", v: "mugeshmugesh9524@gmail.com", h: "mailto:mugeshmugesh9524@gmail.com", sub: "Replies within 24h" },
+                { icon: Mail, t: "Email", v: "mahimahi94426@gmail.com", h: "mailto:mahimahi94426@gmail.com", sub: "Replies within 24h" },
                 { icon: MapPin, t: "Studio", v: "1/174 E, Golden Park, Somayam Palayam, Coimbatore North, Coimbatore, Tamilnadu - 641041", h: "https://maps.google.com/?q=DHASAN+KITCHEN+%26+INTERIOR+WORK+Coimbatore", sub: "Serving Coimbatore and Tenkasi and surrounds" },
                 { icon: Clock, t: "Hours", v: "Open 24 hours · All days", sub: "Emergency support included" },
               ].map((c, i) => {
@@ -129,7 +129,7 @@ function Contact() {
             </div>
             <div className="rounded-3xl overflow-hidden border-gold-glow">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.149175277224!2d77.3256127!3d8.9583988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0429a33f1546f1%3A0x9dd9c63a4ea2337f!2sDHASAN%20KITCHEN%20%26%20INTERIOR%20WORK!5e0!3m2!1sen!2sin!4v1780925602503!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1677.7387229639662!2d76.9041543451815!3d11.035558773778147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85f498ea9bc93%3A0x2ba5554654925ef5!2s1%2F175-A1%2C%20Golden%20Park%20Rd%2C%20Nehru%20Nagar%2C%20Kasthuri%20Naickenpalayam%2C%20Coimbatore%2C%20Tamil%20Nadu%20641041!5e0!3m2!1sen!2sin!4v1781927270314!5m2!1sen!2sin"
                 width="100%" height="450" style={{ border: 0, filter: "invert(0.9) hue-rotate(180deg)" }}
                 allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
                 title="Dhasan Kitchen & Interior Work location" />
