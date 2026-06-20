@@ -67,7 +67,7 @@ function Header() {
               <Link key={n.to} to={n.to} className="py-3 px-4 rounded-lg hover:bg-secondary text-foreground/90 uppercase text-sm tracking-wider">{n.label}</Link>
             ))}
             <a href="tel:9442723200" className="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium">
-              <Phone className="w-4 h-4" /> Call 9442723200
+              <Phone className="w-4 h-4" /> Call Now
             </a>
           </div>
         </div>
@@ -102,7 +102,7 @@ function Footer() {
           <h4 className="text-gold uppercase tracking-wider text-sm mb-4">Reach Us</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 text-gold shrink-0" /> 1/174 E, Golden Park, Somayam Palayam, Coimbatore North, Coimbatore, Tamilnadu - 641041</li>
-            <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-gold" /> <a href="tel:9442723200" className="hover:text-gold">9442723200</a></li>
+            <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-gold" /> <a href="tel:9442723200" className="hover:text-gold">9442723200</a> / <a href="tel:6382543774" className="hover:text-gold">6382543774</a></li>
             <li className="flex items-center gap-2"><MessageCircle className="w-4 h-4 text-gold" /> <a href="https://wa.me/916382543774" className="hover:text-gold">6382543774</a></li>
             <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-gold" /> <a href="mailto:mahimahi94426@gmail.com" className="hover:text-gold break-all">mahimahi94426@gmail.com</a></li>
           </ul>

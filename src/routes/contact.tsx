@@ -48,7 +48,7 @@ function Contact() {
           <Reveal className="lg:col-span-2">
             <div className="space-y-5 sticky top-28">
               {[
-                { icon: Phone, t: "Call us", v: "9442723200", h: "tel:9442723200", sub: "Open 24 hours" },
+                { icon: Phone, t: "Call us", v: "9442723200 / 6382543774", h: "tel:9442723200", sub: "Open 24 hours" },
                 { icon: MessageCircle, t: "WhatsApp", v: "6382543774", h: "https://wa.me/916382543774", sub: "Fastest response" },
                 { icon: Mail, t: "Email", v: "mahimahi94426@gmail.com", h: "mailto:mahimahi94426@gmail.com", sub: "Replies within 24h" },
                 { icon: MapPin, t: "Studio", v: "1/174 E, Golden Park, Somayam Palayam, Coimbatore North, Coimbatore, Tamilnadu - 641041", h: "https://maps.google.com/?q=DHASAN+KITCHEN+%26+INTERIOR+WORK+Coimbatore", sub: "Serving Coimbatore and Tenkasi and surrounds" },
