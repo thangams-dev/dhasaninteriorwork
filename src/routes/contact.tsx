@@ -47,8 +47,25 @@ function Contact() {
           {/* CONTACT INFO */}
           <Reveal className="lg:col-span-2">
             <div className="space-y-5 sticky top-28">
+              {/* Phone Section - Custom */}
+              <div className="group flex gap-4 p-5 rounded-2xl bg-card/50 backdrop-blur border border-border hover:border-gold/40 transition-all hover:-translate-y-0.5">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gold/20 to-rose/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                  <Phone className="w-5 h-5 text-gold" />
+                </div>
+                <div className="min-w-0">
+                  <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Call us</p>
+                  <p className="text-foreground font-medium break-words">
+                    <a href="tel:6382543774" className="hover:text-gold transition">6382543774</a>
+                  </p>
+                  <p className="text-foreground font-medium break-words text-sm">
+                    <span className="text-muted-foreground">Alternative: </span>
+                    <a href="tel:9442723200" className="hover:text-gold transition">9442723200</a>
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1">Open 24 hours</p>
+                </div>
+              </div>
+
               {[
-                { icon: Phone, t: "Call us", v: "9442723200 / 6382543774", h: "tel:9442723200", sub: "Open 24 hours" },
                 { icon: MessageCircle, t: "WhatsApp", v: "6382543774", h: "https://wa.me/916382543774", sub: "Fastest response" },
                 { icon: Mail, t: "Email", v: "mahimahi94426@gmail.com", h: "mailto:mahimahi94426@gmail.com", sub: "Replies within 24h" },
                 { icon: MapPin, t: "Studio", v: "1/174 E, Golden Park, Somayam Palayam, Coimbatore North, Coimbatore, Tamilnadu - 641041", h: "https://maps.google.com/?q=DHASAN+KITCHEN+%26+INTERIOR+WORK+Coimbatore", sub: "Serving Coimbatore and Tenkasi and surrounds" },
