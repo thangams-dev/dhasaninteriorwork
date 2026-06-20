@@ -1,15 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { Check, ChefHat, Sofa, Tv, Layers, BookOpen, Sparkles, ArrowRight, Bed, Briefcase, Hammer, Armchair, Droplets } from "lucide-react";
-import { getImageUrl } from "@/lib/image-utils";
-import kitchenYellow from "@/assets/kitchen-yellow.jpg.asset.json";
-import kitchenModular from "@/assets/kitchen-modular.jpg.asset.json";
-import wallPartition from "@/assets/wall-partition.jpg.asset.json";
-import tvUnitWood from "@/assets/tv-unit-wood.png.asset.json";
-import wardrobe from "@/assets/wardrobe-walnut.png.asset.json";
-import pvcKitchen from "@/assets/pvc-kitchen-magenta.png.asset.json";
-import poojaUnit from "@/assets/pooja-unit-traditional.png.asset.json";
-import poojaPartition from "@/assets/pooja-partition-art.png.asset.json";
+import kitchenYellow from "@/assets/kitchen-yellow.jpg";
+import kitchenModular from "@/assets/kitchen-modular.jpg";
+import wallPartition from "@/assets/wall-partition.jpg";
+import tvUnitWood from "@/assets/tv-unit-wood.png";
+import wardrobe from "@/assets/wardrobe-walnut.png";
+import pvcKitchen from "@/assets/pvc-kitchen-magenta.png";
+import poojaUnit from "@/assets/pooja-unit-traditional.png";
+import poojaPartition from "@/assets/pooja-partition-art.png";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -26,7 +25,7 @@ export const Route = createFileRoute("/services")({
 const big = [
   {
     icon: ChefHat,
-    img: getImageUrl(kitchenModular),
+    img: kitchenModular,
     alt: "Modern walnut and marble modular kitchen by Dhasan Interior",
     title: "Modular Kitchen",
     tag: "Most loved",
@@ -35,7 +34,7 @@ const big = [
   },
   {
     icon: Droplets,
-    img: getImageUrl(pvcKitchen),
+    img: pvcKitchen,
     alt: "Glossy magenta PVC modular kitchen with frosted glass cabinets",
     title: "PVC Modular Kitchen",
     tag: "Waterproof",
@@ -44,7 +43,7 @@ const big = [
   },
   {
     icon: Layers,
-    img: getImageUrl(wardrobe),
+    img: wardrobe,
     alt: "Floor-to-ceiling walnut wardrobe with dresser and storage by Dhasan",
     title: "Wardrobe Design",
     tag: "Smart storage",
@@ -53,7 +52,7 @@ const big = [
   },
   {
     icon: Tv,
-    img: getImageUrl(tvUnitWood),
+    img: tvUnitWood,
     alt: "Wood-slat TV unit with backlit panels and pooja niche by Dhasan",
     title: "TV Unit Design",
     tag: "Statement walls",
@@ -62,7 +61,7 @@ const big = [
   },
   {
     icon: Sparkles,
-    img: getImageUrl(poojaUnit),
+    img: poojaUnit,
     alt: "Traditional teak pooja unit with shutter doors and god frames",
     title: "Pooja Units",
     tag: "Sacred spaces",
@@ -71,7 +70,7 @@ const big = [
   },
   {
     icon: Bed,
-    img: getImageUrl(kitchenYellow),
+    img: kitchenYellow,
     alt: "Sunshine yellow bedroom-side kitchen by Dhasan Interior",
     title: "Bedroom Interior",
     tag: "Restful spaces",
@@ -80,7 +79,7 @@ const big = [
   },
   {
     icon: Briefcase,
-    img: wallPartition.url,
+    img: wallPartition,
     alt: "Wood-slat office partition and reception design",
     title: "Office Interior",
     tag: "Workspace",
@@ -89,7 +88,7 @@ const big = [
   },
   {
     icon: Sofa,
-    img: poojaPartition.url,
+    img: poojaPartition,
     alt: "Gold leaf decorative partition with Kamadhenu cow and tree of life",
     title: "Interior Design & Renovation",
     tag: "Full transformation",

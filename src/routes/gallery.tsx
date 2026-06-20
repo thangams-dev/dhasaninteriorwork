@@ -1,17 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { ArrowRight } from "lucide-react";
-import { getImageUrl } from "@/lib/image-utils";
-import kitchenModular from "@/assets/kitchen-modular.jpg.asset.json";
-import kitchenYellow from "@/assets/kitchen-yellow.jpg.asset.json";
-import wallPartition from "@/assets/wall-partition.jpg.asset.json";
-import tvUnitWood from "@/assets/tv-unit-wood.png.asset.json";
-import wardrobe from "@/assets/wardrobe-walnut.png.asset.json";
-import pvcKitchen from "@/assets/pvc-kitchen-magenta.png.asset.json";
-import poojaUnit from "@/assets/pooja-unit-traditional.png.asset.json";
-import poojaPartition from "@/assets/pooja-partition-art.png.asset.json";
-import tvPooja from "@/assets/tv-pooja.jpg.asset.json";
-import heroKitchen from "@/assets/hero-kitchen.jpg.asset.json";
+import kitchenModular from "@/assets/kitchen-modular.jpg";
+import kitchenYellow from "@/assets/kitchen-yellow.jpg";
+import wallPartition from "@/assets/wall-partition.jpg";
+import tvUnitWood from "@/assets/tv-unit-wood.png";
+import wardrobe from "@/assets/wardrobe-walnut.png";
+import pvcKitchen from "@/assets/pvc-kitchen-magenta.png";
+import poojaUnit from "@/assets/pooja-unit-traditional.png";
+import poojaPartition from "@/assets/pooja-partition-art.png";
+import tvPooja from "@/assets/tv-pooja.png";
+import heroKitchen from "@/assets/hero-kitchen.png";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -27,16 +26,16 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const items = [
-  { img: getImageUrl(poojaUnit), cat: "Pooja Unit", title: "Traditional Folding Mandir", alt: "Traditional teak folding-door pooja unit with god frames" },
-  { img: getImageUrl(tvUnitWood), cat: "TV Unit", title: "Wood-Slat TV Wall with Pooja Niche", alt: "Wood-slat TV unit with white centre panel and side pooja niche" },
-  { img: getImageUrl(wardrobe), cat: "Wardrobe", title: "Walnut Wardrobe + Dresser", alt: "Walnut wardrobe with built-in dresser and side cabinet" },
-  { img: getImageUrl(pvcKitchen), cat: "PVC Kitchen", title: "Glossy Magenta PVC Modular", alt: "Magenta and silver PVC modular kitchen wall cabinets" },
-  { img: getImageUrl(poojaPartition), cat: "Decorative Partition", title: "Gold-Leaf Kamadhenu Wall", alt: "Gold-leaf decorative partition with tree of life and cow motif" },
-  { img: getImageUrl(kitchenModular), cat: "Modular Kitchen", title: "Walnut & Marble L-Kitchen", alt: "Walnut and marble L-shaped modular kitchen" },
-  { img: getImageUrl(heroKitchen), cat: "Modular Kitchen", title: "Emerald Island Kitchen", alt: "Modern emerald island modular kitchen" },
-  { img: getImageUrl(kitchenYellow), cat: "Bold Kitchen", title: "Sunshine Yellow + Graphite", alt: "Yellow and graphite bold modular kitchen" },
-  { img: getImageUrl(wallPartition), cat: "Living Room", title: "Wood-Slat Partition & Display", alt: "Solid wood slat partition with display shelving" },
-  { img: getImageUrl(tvPooja), cat: "TV & Pooja", title: "Combined TV + Pooja Layout", alt: "TV and pooja unit in one wall design" },
+  { img: poojaUnit, cat: "Pooja Unit", title: "Traditional Folding Mandir", alt: "Traditional teak folding-door pooja unit with god frames" },
+  { img: tvUnitWood, cat: "TV Unit", title: "Wood-Slat TV Wall with Pooja Niche", alt: "Wood-slat TV unit with white centre panel and side pooja niche" },
+  { img: wardrobe, cat: "Wardrobe", title: "Walnut Wardrobe + Dresser", alt: "Walnut wardrobe with built-in dresser and side cabinet" },
+  { img: pvcKitchen, cat: "PVC Kitchen", title: "Glossy Magenta PVC Modular", alt: "Magenta and silver PVC modular kitchen wall cabinets" },
+  { img: poojaPartition, cat: "Decorative Partition", title: "Gold-Leaf Kamadhenu Wall", alt: "Gold-leaf decorative partition with tree of life and cow motif" },
+  { img: kitchenModular, cat: "Modular Kitchen", title: "Walnut & Marble L-Kitchen", alt: "Walnut and marble L-shaped modular kitchen" },
+  { img: heroKitchen, cat: "Modular Kitchen", title: "Emerald Island Kitchen", alt: "Modern emerald island modular kitchen" },
+  { img: kitchenYellow, cat: "Bold Kitchen", title: "Sunshine Yellow + Graphite", alt: "Yellow and graphite bold modular kitchen" },
+  { img: wallPartition, cat: "Living Room", title: "Wood-Slat Partition & Display", alt: "Solid wood slat partition with display shelving" },
+  { img: tvPooja, cat: "TV & Pooja", title: "Combined TV + Pooja Layout", alt: "TV and pooja unit in one wall design" },
 ];
 
 function Gallery() {
