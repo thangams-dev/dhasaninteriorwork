@@ -16,7 +16,8 @@ export const Route = createFileRoute("/contact")({
       { property: "og:url", content: "https://www.dhasankitchenandinteriors.in/contact" },
       { property: "og:site_name", content: "Dhasan Kitchen & Interior Work" },
       { name: "twitter:card", content: "summary_large_image" },
-    ], links: [{ rel: "canonical", href: "https://www.dhasankitchenandinteriors.in/contact" }],"
+    ],
+    links: [{ rel: "canonical", href: "https://www.dhasankitchenandinteriors.in/contact" }],
   }),
   component: Contact,
 });

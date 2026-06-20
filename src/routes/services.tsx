@@ -23,7 +23,8 @@ export const Route = createFileRoute("/services")({
       { property: "og:url", content: "https://www.dhasankitchenandinteriors.in/services" },
       { property: "og:site_name", content: "Dhasan Kitchen & Interior Work" },
       { name: "twitter:card", content: "summary_large_image" },
-    ], links: [{ rel: "canonical", href: "https://www.dhasankitchenandinteriors.in/services" }],"
+    ],
+    links: [{ rel: "canonical", href: "https://www.dhasankitchenandinteriors.in/services" }],
   }),
   component: Services,
 });
