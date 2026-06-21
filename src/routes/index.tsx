@@ -124,7 +124,7 @@ function Home() {
         <div className="flex gap-12 animate-marquee whitespace-nowrap">
           {[...Array(2)].map((_, k) => (
             <div key={k} className="flex gap-12 items-center font-display text-2xl text-gold/60">
-              {["Modular Kitchen", "✦", "Wardrobe", "✦", "TV Unit", "✦", "False Ceiling", "✦", "Pooja Unit", "✦", "Living Room", "✦", "Study Table", "✦", "Loft Storage", "✦"].map((w, i) => (
+              {["Modular Kitchen", "✦", "Wardrobe", "✦", "TV Unit", "✦", "Pooja Unit", "✦", "Living Room", "✦", "Study Table", "✦", "Loft Storage", "✦"].map((w, i) => (
                 <span key={i}>{w}</span>
               ))}
             </div>
@@ -274,6 +274,23 @@ function Home() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* LOCATION MAP */}
+      <section className="py-24 px-6">
+        <div className="max-w-5xl mx-auto">
+          <Reveal>
+            <div className="text-center mb-12">
+              <p className="text-gold uppercase tracking-[0.3em] text-xs mb-3">Visit us</p>
+              <h2 className="font-display text-4xl sm:text-5xl mb-4">Find us <span className="text-gradient-gold italic">on the map.</span></h2>
+            </div>
+          </Reveal>
+          <Reveal delay={150}>
+            <div className="rounded-2xl overflow-hidden border border-gold/20 shadow-xl">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.9890382341255!2d76.9067829!3d11.0394484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x434d3a8679d9049f%3A0xe6cbda81c93c915c!2sDhasan%20Kitchen%20%26%20Interior%20Work!5e0!3m2!1sen!2sin!4v1782031319393!5m2!1sen!2sin" width="100%" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+            </div>
+          </Reveal>
         </div>
       </section>
 
