@@ -11,7 +11,7 @@ export const Route = createFileRoute("/about")({
     meta: [
       { title: "About Dhasan Interior — Founded 2018 by V. Mahendran | Coimbatore & Tenkasi" },
       { name: "description", content: "Dhasan Interior is a trusted interior design and modular kitchen company founded in 2018 by Mr. V. Mahendran. 100+ projects across Coimbatore, Tenkasi & nearby areas." },
-      { name: "keywords", content: "about Dhasan, interior designer, modular kitchen expert, V. Mahendran, trusted interior company, interior design experience, award-winning interiors, interior design company Tenkasi" },
+      { name: "keywords", content: "about Dhasan, interior designer, modular kitchen expert, V. Mahendran, trusted interior company, interior design experience, award-winning interiors, interior design company Tenkasi, professional interior designer, experienced kitchen designer, interior design company Coimbatore, trusted interior designer, award-winning designer, designer portfolio, company experience, founder story, interior design team, design expertise, kitchen expertise, wardrobe expertise, 100+ projects, successful projects, customer testimonials, design philosophy, quality materials, craftsmanship, interior design services, professional service" },
       { name: "author", content: "Dhasan Kitchen & Interior Work" },
       { property: "og:title", content: "About Dhasan Kitchen & Interior Work" },
       { property: "og:description", content: "Founded 2018 by V. Mahendran. 100+ successful projects. Your trusted interior design partner." },

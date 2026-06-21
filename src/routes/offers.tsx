@@ -8,7 +8,7 @@ export const Route = createFileRoute("/offers")({
     meta: [
       { title: "Special Offers — Up to 20% Off Modular Kitchens & Interiors | Dhasan" },
       { name: "description", content: "Festive offer: Get up to 20% discount on selected interior and modular kitchen projects. Free site visit and consultation across Coimbatore & Tenkasi." },
-      { name: "keywords", content: "special offers, discount kitchen, modular kitchen deals, interior design offers, seasonal discounts, festive offers, kitchen discounts Coimbatore, affordable interiors" },
+      { name: "keywords", content: "special offers, discount kitchen, modular kitchen deals, interior design offers, seasonal discounts, festive offers, kitchen discounts Coimbatore, affordable interiors, kitchen discounts Tenkasi, limited time offer, promotional offers, furniture discounts, wardrobe discounts, TV unit discounts, pooja unit discounts, bedroom interior discounts, office interior discounts, seasonal sale, festive sale, year-end offer, new year offer, anniversary offer, combo offers, bundle deals, affordable kitchens, budget-friendly kitchen, cost-effective design, savings on projects, special price" }
       { name: "author", content: "Dhasan Kitchen & Interior Work" },
       { property: "og:title", content: "Special Offers — Dhasan Interior Work" },
       { property: "og:description", content: "Up to 20% off on selected projects. Limited time offer. Book now!" },
