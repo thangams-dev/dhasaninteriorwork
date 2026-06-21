@@ -153,7 +153,7 @@ function Contact() {
             </div>
             <div className="rounded-3xl overflow-hidden border-gold-glow">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.179876453688!2d76.90286742346891!3d11.035558767819236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85f498ea9bc93%3A0x2ba5554654925ef5!2s1%2F174%20E%2C%20Golden%20Park%2C%20Somayampalayam%2C%20Coimbatore%20North%2C%20Coimbatore%2C%20Tamilnadu%20-%20641041!5e0!3m2!1sen!2sin!4v1719062400000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.9890382341255!2d76.9067829!3d11.0394484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x434d3a8679d9049f%3A0xe6cbda81c93c915c!2sDhasan%20Kitchen%20%26%20Interior%20Work!5e0!3m2!1sen!2sin!4v1782031319393!5m2!1sen!2sin"
                 width="100%" height="450" style={{ border: 0, filter: "invert(0.9) hue-rotate(180deg)" }}
                 allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
                 title="Dhasan Kitchen & Interior Work location" />
