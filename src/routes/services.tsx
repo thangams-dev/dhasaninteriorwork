@@ -34,7 +34,7 @@ const big = [
     icon: ChefHat,
     img: kitchenModular,
     alt: "Modern walnut and marble modular kitchen by Dhasan Interior",
-    title: "Modular Kitchen",
+    title: "Modular Kitchen Design in Coimbatore",
     tag: "Most loved",
     desc: "Modern and space-efficient kitchen designs tailored to your requirements. L, U, parallel and island layouts in acrylic, laminate, PU and membrane finishes — all sitting on marine-grade BWP plywood with Hettich/Hafele soft-close fittings.",
     features: ["Soft-close drawers & hinges", "Granite / quartz countertops", "Built-in tall units & pull-outs", "Marine BWP plywood carcass"],
@@ -43,7 +43,7 @@ const big = [
     icon: Droplets,
     img: pvcKitchen,
     alt: "Glossy magenta PVC modular kitchen with frosted glass cabinets",
-    title: "PVC Modular Kitchen",
+    title: "PVC Modular Kitchen in Coimbatore",
     tag: "Waterproof",
     desc: "Durable, waterproof and low-maintenance PVC kitchen solutions — termite-proof, easy-wipe surfaces and bold high-gloss finishes that stay looking new for years. Perfect for rentals, compact homes and wet zones.",
     features: ["100% waterproof & termite-proof", "Glossy & matte PVC finishes", "Frosted glass shutter options", "Quick install, low upkeep"],
@@ -52,7 +52,7 @@ const big = [
     icon: Layers,
     img: wardrobe,
     alt: "Floor-to-ceiling walnut wardrobe with dresser and storage by Dhasan",
-    title: "Wardrobe Design",
+    title: "Wardrobe Design in Coimbatore",
     tag: "Smart storage",
     desc: "Custom wardrobes with stylish and practical storage solutions — sliding or hinged, integrated dressers, internal LEDs and modular drawers tailored to your wardrobe inventory.",
     features: ["Sliding & hinged options", "Built-in dressing mirror", "Trouser racks & accessory trays", "Loft units for off-season storage"],
@@ -61,7 +61,7 @@ const big = [
     icon: Tv,
     img: tvUnitWood,
     alt: "Wood-slat TV unit with backlit panels and pooja niche by Dhasan",
-    title: "TV Unit Design",
+    title: "TV Unit Design in Coimbatore",
     tag: "Statement walls",
     desc: "Elegant TV units that pull the whole living room together — fluted wood panelling, backlit niches, hidden cable management and a serene side-niche for the pooja idols.",
     features: ["Fluted & veneer panelling", "Backlit cove lighting", "Hidden cable management", "Integrated display niches"],
@@ -70,7 +70,7 @@ const big = [
     icon: Sparkles,
     img: poojaUnit,
     alt: "Traditional teak pooja unit with shutter doors and god frames",
-    title: "Pooja Units",
+    title: "Pooja Units in Coimbatore",
     tag: "Sacred spaces",
     desc: "Devotional corners that feel rooted in tradition yet beautifully crafted — fluted folding doors, mandir-style backdrops, brass detailing and built-in storage for puja essentials.",
     features: ["Folding shutter doors", "Mandir-style top arches", "Brass & teak detailing", "Discreet puja-item storage"],
@@ -131,7 +131,7 @@ function Services() {
                 <div className="relative group">
                   <div className="absolute -inset-4 bg-gradient-to-tr from-gold/20 to-rose/15 rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition" />
                   <div className="relative overflow-hidden rounded-3xl border border-gold/20">
-                    <img src={s.img} alt={s.alt} className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" />
+                    <img src={s.img} alt={s.alt} width={600} height={450} className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" />
                   </div>
                   <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-background/80 backdrop-blur border border-gold/30 text-xs uppercase tracking-wider text-gold">{s.tag}</div>
                 </div>

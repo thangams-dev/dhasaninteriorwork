@@ -13,6 +13,3 @@ Allow: /
 
 # Sitemap
 Sitemap: https://www.dhasankitchenandinteriors.in/sitemap.xml
-
-# Crawl delay
-Crawl-delay: 1

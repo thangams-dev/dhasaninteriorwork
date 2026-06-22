@@ -110,8 +110,91 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <Layout />
-    </QueryClientProvider>
+    <>
+      {/* LocalBusiness JSON-LD Schema */}
+      <script 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "InteriorDesigner",
+            "name": "Dhasan Kitchen & Interior Work",
+            "alternateName": "Dhasan Interiors",
+            "url": "https://www.dhasankitchenandinteriors.in/",
+            "logo": "https://www.dhasankitchenandinteriors.in/Media-2.jpg",
+            "image": "https://www.dhasankitchenandinteriors.in/Media-2.jpg",
+            "description": "Trusted modular kitchen and interior design studio in Coimbatore. Specialising in modular kitchens, wardrobes, TV units, pooja units and complete home interiors since 2018.",
+            "founder": {
+              "@type": "Person",
+              "name": "V. Mahendran"
+            },
+            "foundingDate": "2018",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Coimbatore",
+              "addressRegion": "Tamil Nadu",
+              "postalCode": "641001",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "11.0394484",
+              "longitude": "76.9067829"
+            },
+            "telephone": "+916382543774",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+                "opens": "09:00",
+                "closes": "20:00"
+              }
+            ],
+            "sameAs": [
+              "https://www.google.com/maps/place/Dhasan+Kitchen+%26+Interior+Work"
+            ],
+            "areaServed": [
+              { "@type": "City", "name": "Coimbatore" },
+              { "@type": "City", "name": "Tenkasi" }
+            ],
+            "priceRange": "₹₹",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5.0",
+              "reviewCount": "10"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Interior Design Services",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Modular Kitchen Design Coimbatore" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PVC Modular Kitchen Coimbatore" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wardrobe Design Coimbatore" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "TV Unit Design Coimbatore" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pooja Unit Design Coimbatore" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Interior Design Coimbatore" } }
+              ]
+            }
+          })
+        }}
+      />
+
+      {/* Google Analytics 4 */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" />
+      <script 
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+          `
+        }}
+      />
+
+      <QueryClientProvider client={queryClient}>
+        <Layout />
+      </QueryClientProvider>
+    </>
   );
 }
