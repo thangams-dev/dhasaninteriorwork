@@ -322,17 +322,17 @@ function Home() {
             </div>
           </Reveal>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {services.map((s, i) => (
               <Reveal key={s.title} delay={i * 80}>
-                <Link to={s.link} className="group relative h-full p-8 rounded-2xl bg-card/50 backdrop-blur border border-border hover:border-gold/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                <Link to={s.link} className="group relative h-full p-6 sm:p-8 rounded-2xl bg-card/50 backdrop-blur border border-border hover:border-gold/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col">
                   <div className="absolute inset-0 bg-gradient-to-br from-gold/0 to-gold/0 group-hover:from-gold/5 group-hover:to-rose/5 transition-all duration-500" />
-                  <div className="relative">
-                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-gold/20 to-rose/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                      <s.icon className="w-6 h-6 text-gold" />
+                  <div className="relative flex-1">
+                    <div className="w-12 sm:w-14 h-12 sm:h-14 rounded-xl bg-gradient-to-br from-gold/20 to-rose/10 flex items-center justify-center mb-4 sm:mb-5 group-hover:scale-110 transition-transform">
+                      <s.icon className="w-5 sm:w-6 h-5 sm:h-6 text-gold" />
                     </div>
-                    <h3 className="font-display text-2xl mb-3">{s.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                    <h3 className="font-display text-xl sm:text-2xl mb-2 sm:mb-3">{s.title}</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
                   </div>
                 </Link>
               </Reveal>

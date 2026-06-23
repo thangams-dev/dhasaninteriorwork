@@ -65,27 +65,27 @@ function InteriorDesignersPage() {
       />
 
       {/* HERO */}
-      <section className="relative min-h-[80vh] flex items-center overflow-hidden pt-20">
+      <section className="relative min-h-[70vh] sm:min-h-[80vh] flex items-center overflow-hidden pt-16 sm:pt-20 px-5 sm:px-6">
         <div className="absolute inset-0 -z-10 bg-gradient-luxury" />
-        <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-gold/10 blur-3xl animate-float" />
-        <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-rose/10 blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
+        <div className="absolute top-20 right-10 w-40 sm:w-72 h-40 sm:h-72 rounded-full bg-gold/10 blur-3xl animate-float" />
+        <div className="absolute bottom-20 left-10 w-48 sm:w-96 h-48 sm:h-96 rounded-full bg-rose/10 blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
 
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 py-16 w-full">
+        <div className="max-w-7xl mx-auto py-12 sm:py-16 w-full">
           <Reveal>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-gold/40 bg-card/40 backdrop-blur text-xs uppercase tracking-wider text-gold mb-5">
-              <Sparkles className="w-3.5 h-3.5" /> Expert Interior Designers
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-gold/40 bg-card/40 backdrop-blur text-xs uppercase tracking-wider text-gold mb-4 sm:mb-5">
+              <Sparkles className="w-3 sm:w-3.5 h-3 sm:h-3.5" /> Expert Interior Designers
             </div>
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-tight mb-6">
+            <h1 className="font-display text-3xl sm:text-5xl lg:text-7xl leading-tight mb-4 sm:mb-6">
               Interior Designers in Coimbatore <span className="text-gradient-gold">You Can Trust</span>
             </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mb-8">
+            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-2xl mb-6 sm:mb-8">
               Dhasan Kitchen & Interior Work — 100+ completed projects, 5-star rated interior design studio. From concept to completion, we handle every detail of your home's transformation.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Link to="/contact" className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium hover:scale-105 transition shimmer">
+            <div className="flex flex-wrap gap-3 sm:gap-4">
+              <Link to="/contact" className="inline-flex items-center gap-2 px-5 sm:px-7 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium text-sm sm:text-base hover:scale-105 transition shimmer">
                 Get Free Consultation <ArrowRight className="w-4 h-4" />
               </Link>
-              <Link to="/gallery" className="inline-flex items-center gap-2 px-7 py-3 rounded-full border border-gold/40 text-gold hover:bg-gold/10 transition">
+              <Link to="/gallery" className="inline-flex items-center gap-2 px-5 sm:px-7 py-2.5 sm:py-3 rounded-full border border-gold/40 text-gold hover:bg-gold/10 transition text-sm sm:text-base">
                 View Our Work
               </Link>
             </div>

@@ -115,19 +115,19 @@ const small = [
 function Services() {
   return (
     <>
-      <section className="py-20 px-6 text-center">
+      <section className="py-12 sm:py-20 px-5 sm:px-6 text-center">
         <Reveal>
-          <p className="text-gold uppercase tracking-[0.3em] text-xs mb-4">Our services</p>
-          <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl mb-6 max-w-4xl mx-auto leading-tight">Everything your home needs, <span className="text-gradient-gold italic">none of the runaround.</span></h1>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">One studio. One project manager. Every interior trade you'll ever need under a single quote — across Coimbatore, Tenkasi and nearby areas.</p>
+          <p className="text-gold uppercase tracking-[0.3em] text-xs mb-3">Our services</p>
+          <h1 className="font-display text-3xl sm:text-5xl lg:text-7xl mb-4 sm:mb-6 max-w-4xl mx-auto leading-tight">Everything your home needs, <span className="text-gradient-gold italic">none of the runaround.</span></h1>
+          <p className="text-xs sm:text-base text-muted-foreground max-w-2xl mx-auto px-2">One studio. One project manager. Every interior trade you'll ever need under a single quote — across Coimbatore, Tenkasi and nearby areas.</p>
         </Reveal>
       </section>
 
       <section className="px-6 pb-16">
-        <div className="max-w-7xl mx-auto space-y-24">
+        <div className="max-w-7xl mx-auto space-y-16 sm:space-y-24">
           {big.map((s, i) => (
             <Reveal key={s.title} delay={i * 60}>
-              <div className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ${i % 2 ? "lg:[&>*:first-child]:order-2" : ""}`}>
+              <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ${i % 2 ? "lg:[&>*:first-child]:order-2" : ""}`}>
                 <div className="relative group">
                   <div className="absolute -inset-4 bg-gradient-to-tr from-gold/20 to-rose/15 rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition" />
                   <div className="relative overflow-hidden rounded-3xl border border-gold/20">
@@ -135,15 +135,15 @@ function Services() {
                   </div>
                   <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-background/80 backdrop-blur border border-gold/30 text-xs uppercase tracking-wider text-gold">{s.tag}</div>
                 </div>
-                <div>
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-gold/20 to-rose/10 flex items-center justify-center mb-5">
-                    <s.icon className="w-6 h-6 text-gold" />
+                <div className="px-2 sm:px-0">
+                  <div className="w-12 sm:w-14 h-12 sm:h-14 rounded-xl bg-gradient-to-br from-gold/20 to-rose/10 flex items-center justify-center mb-4 sm:mb-5">
+                    <s.icon className="w-5 sm:w-6 h-5 sm:h-6 text-gold" />
                   </div>
-                  <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl mb-5">{s.title}</h2>
-                  <p className="text-muted-foreground leading-relaxed mb-6">{s.desc}</p>
-                  <ul className="grid sm:grid-cols-2 gap-3 mb-8">
+                  <h2 className="font-display text-2xl sm:text-3xl lg:text-5xl mb-4 sm:mb-5">{s.title}</h2>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5 sm:mb-6">{s.desc}</p>
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-6 sm:mb-8">
                     {s.features.map(f => (
-                      <li key={f} className="flex items-center gap-2 text-sm text-foreground/90">
+                      <li key={f} className="flex items-center gap-2 text-xs sm:text-sm text-foreground/90">
                         <span className="w-5 h-5 rounded-full bg-gold/20 border border-gold/40 flex items-center justify-center shrink-0">
                           <Check className="w-3 h-3 text-gold" />
                         </span>
@@ -151,7 +151,7 @@ function Services() {
                       </li>
                     ))}
                   </ul>
-                  <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-gold/40 text-gold hover:bg-gold/10 transition">
+                  <Link to="/contact" className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full border border-gold/40 text-gold hover:bg-gold/10 transition text-sm sm:text-base">
                     Get a quote <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -161,21 +161,21 @@ function Services() {
         </div>
       </section>
 
-      <section className="py-24 px-6 bg-gradient-luxury">
+      <section className="py-16 sm:py-24 px-5 sm:px-6 bg-gradient-luxury">
         <div className="max-w-7xl mx-auto">
           <Reveal>
-            <div className="text-center mb-12">
-              <p className="text-gold uppercase tracking-[0.3em] text-xs mb-3">Custom furniture & add-ons</p>
-              <h2 className="font-display text-4xl sm:text-5xl">Built-to-order pieces that <span className="text-gradient-gold italic">finish the look.</span></h2>
+            <div className="text-center mb-10 sm:mb-12">
+              <p className="text-gold uppercase tracking-[0.3em] text-xs mb-2 sm:mb-3">Custom furniture & add-ons</p>
+              <h2 className="font-display text-2xl sm:text-4xl lg:text-5xl px-2">Built-to-order pieces that <span className="text-gradient-gold italic">finish the look.</span></h2>
             </div>
           </Reveal>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {small.map((s, i) => (
               <Reveal key={s.t} delay={i * 60}>
-                <div className="p-6 rounded-2xl bg-card/60 backdrop-blur border border-gold/15 hover:border-gold/40 hover:-translate-y-1 transition-all h-full">
-                  <s.icon className="w-7 h-7 text-gold mb-4" />
-                  <h3 className="font-display text-xl mb-2">{s.t}</h3>
-                  <p className="text-sm text-muted-foreground">{s.d}</p>
+                <div className="p-5 sm:p-6 rounded-2xl bg-card/60 backdrop-blur border border-gold/15 hover:border-gold/40 hover:-translate-y-1 transition-all h-full flex flex-col">
+                  <s.icon className="w-6 sm:w-7 h-6 sm:h-7 text-gold mb-3 sm:mb-4" />
+                  <h3 className="font-display text-lg sm:text-xl mb-2">{s.t}</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground flex-1">{s.d}</p>
                 </div>
               </Reveal>
             ))}
@@ -183,13 +183,13 @@ function Services() {
         </div>
       </section>
 
-      <section className="py-24 px-6">
-        <div className="max-w-5xl mx-auto text-center rounded-3xl border-gold-glow p-10 sm:p-12 lg:p-20 bg-gradient-luxury">
+      <section className="py-16 sm:py-24 px-5 sm:px-6">
+        <div className="max-w-5xl mx-auto text-center rounded-3xl border-gold-glow p-6 sm:p-10 lg:p-20 bg-gradient-luxury">
           <Reveal>
-            <p className="text-gold uppercase tracking-[0.3em] text-xs mb-4">🎉 Limited time offer</p>
-            <h2 className="font-display text-3xl sm:text-5xl mb-5">Get up to <span className="text-gradient-gold italic">20% off</span> on selected interior & modular kitchen projects.</h2>
-            <p className="text-muted-foreground max-w-xl mx-auto mb-8">Book a free home visit and we'll walk you through ideas, materials and a realistic budget — no commitment.</p>
-            <Link to="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium hover:scale-105 transition shimmer">
+            <p className="text-gold uppercase tracking-[0.3em] text-xs mb-3">🎉 Limited time offer</p>
+            <h2 className="font-display text-2xl sm:text-4xl lg:text-5xl mb-4 sm:mb-5">Get up to <span className="text-gradient-gold italic">20% off</span> on selected interior & modular kitchen projects.</h2>
+            <p className="text-xs sm:text-base text-muted-foreground max-w-xl mx-auto mb-6 sm:mb-8 px-2">Book a free home visit and we'll walk you through ideas, materials and a realistic budget — no commitment.</p>
+            <Link to="/contact" className="inline-flex items-center gap-2 px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium text-sm sm:text-base hover:scale-105 transition shimmer">
               Claim your discount <ArrowRight className="w-4 h-4" />
               <span className="shimmer-overlay" />
             </Link>
