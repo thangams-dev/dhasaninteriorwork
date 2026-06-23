@@ -158,21 +158,16 @@ function RootComponent() {
               { "@type": "City", "name": "Tenkasi" }
             ],
             "priceRange": "₹₹",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5.0",
-              "reviewCount": "10"
-            },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
               "name": "Interior Design Services",
               "itemListElement": [
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Modular Kitchen Design Coimbatore" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PVC Modular Kitchen Coimbatore" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wardrobe Design Coimbatore" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "TV Unit Design Coimbatore" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pooja Unit Design Coimbatore" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Interior Design Coimbatore" } }
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Modular Kitchen Design Coimbatore", "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "10" } } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PVC Modular Kitchen Coimbatore", "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "10" } } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wardrobe Design Coimbatore", "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "10" } } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "TV Unit Design Coimbatore", "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "10" } } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pooja Unit Design Coimbatore", "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "10" } } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Interior Design Coimbatore", "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "10" } } }
               ]
             }
           })
