@@ -35,12 +35,12 @@ export const Route = createFileRoute("/")({
 });
 
 const services = [
-  { icon: ChefHat, title: "Modular Kitchen", desc: "L, U, parallel and island layouts engineered for the way your family actually cooks.", link: "/modular-kitchen-coimbatore" },
-  { icon: Droplets, title: "PVC Modular Kitchen", desc: "Durable, waterproof and low-maintenance kitchens — bold finishes, easy upkeep.", link: "/modular-kitchen-coimbatore" },
-  { icon: Layers, title: "Wardrobe Design", desc: "Floor-to-ceiling wardrobes with internal lighting and built-in dressers.", link: "/wardrobe-design-coimbatore" },
-  { icon: Tv, title: "TV & Pooja Units", desc: "Statement walls — backlit, fluted, and built-in pooja niches you'll never want to hide.", link: "/home-interiors-coimbatore" },
-  { icon: Bed, title: "Bedroom Interior", desc: "Cots, wardrobes, side storage and décor — a complete restful space, coordinated.", link: "/home-interiors-coimbatore" },
-  { icon: Briefcase, title: "Office Interior", desc: "Workstations, cabins, reception walls and acoustic ceilings built for productivity.", link: "/home-interiors-coimbatore" },
+  { icon: ChefHat, title: "Modular Kitchen", desc: "L, U, parallel and island layouts engineered for the way your family actually cooks.", link: "/services" },
+  { icon: Droplets, title: "PVC Modular Kitchen", desc: "Durable, waterproof and low-maintenance kitchens — bold finishes, easy upkeep.", link: "/services" },
+  { icon: Layers, title: "Wardrobe Design", desc: "Floor-to-ceiling wardrobes with internal lighting and built-in dressers.", link: "/services" },
+  { icon: Tv, title: "TV & Pooja Units", desc: "Statement walls — backlit, fluted, and built-in pooja niches you'll never want to hide.", link: "/services" },
+  { icon: Bed, title: "Bedroom Interior", desc: "Cots, wardrobes, side storage and décor — a complete restful space, coordinated.", link: "/services" },
+  { icon: Briefcase, title: "Office Interior", desc: "Workstations, cabins, reception walls and acoustic ceilings built for productivity.", link: "/services" },
 ];
 
 const why = [
