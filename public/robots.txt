@@ -1,15 +1,50 @@
+# Robots.txt - Dhasan Kitchen & Interior Work
 User-agent: *
 Allow: /
+Allow: *.css
+Allow: *.js
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.png
+Allow: *.gif
+Allow: *.svg
+Allow: *.webp
+
+# Block unnecessary pages
 Disallow: /admin/
+Disallow: /api/
 Disallow: /private/
+Disallow: /temp/
+Disallow: /test/
 
-# Google Search Console
-User-agent: Googlebot
-Allow: /
+# Allow important SEO pages
+Allow: /interior-designers-coimbatore
+Allow: /home-interiors-coimbatore
+Allow: /modular-kitchen-coimbatore
+Allow: /wardrobe-design-coimbatore
+Allow: /services
+Allow: /gallery
+Allow: /contact
 
-# Bing
-User-agent: Bingbot
-Allow: /
-
-# Sitemap
+# Sitemap location
 Sitemap: https://www.dhasankitchenandinteriors.in/sitemap.xml
+
+# Crawl delay - be respectful
+Crawl-delay: 1
+
+# Googlebot (faster crawling allowed)
+User-agent: Googlebot
+Crawl-delay: 0
+Allow: /
+
+# Bingbot
+User-agent: Bingbot
+Crawl-delay: 1
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: DotBot
+User-agent: MJ12bot
+Disallow: /

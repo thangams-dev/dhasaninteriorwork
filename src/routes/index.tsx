@@ -14,8 +14,8 @@ import poojaPartition from "@/assets/pooja-partition-art.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Modular Kitchen & Interior Design in Coimbatore | Dhasan" },
-      { name: "description", content: "Modular kitchens, wardrobes, TV units & complete home interiors in Coimbatore. 100+ projects. Free design consultation. Call Dhasan Interior now." },
+      { title: "Interior Designers in Coimbatore | Dhasan Kitchen Interiors" },
+      { name: "description", content: "Professional interior designers in Coimbatore. Modular kitchens, wardrobes, TV units & home interiors. Free consultation. Expert service." },
       { name: "keywords", content: "modular kitchen Coimbatore, kitchen design Coimbatore, modular wardrobe, interior design services, PVC kitchen, TV unit design, pooja unit, home interiors, kitchen renovation, interior designer near me, custom kitchen cabinets, kitchen remodeling, affordable kitchens, modular kitchen design, kitchen cabinet design, wardrobe design Coimbatore, wardrobe design Tenkasi, TV unit Coimbatore, TV unit Tenkasi, pooja unit Coimbatore, pooja unit design, bedroom interior design, office interior design, kitchen renovation Coimbatore, home renovation Coimbatore, false ceiling design, wall partition design, interior design Coimbatore, interior design Tenkasi, interior designer Coimbatore, interior designer Tenkasi, best interior designer, top interior designers, luxury kitchens, budget kitchen designs, affordable interior design, premium kitchens, custom kitchen design, kitchen fitting, kitchen installation, modular kitchen installation, contemporary kitchen design, modern interior design, traditional kitchen design, minimalist design, full home interiors, complete home makeover, kitchen remodeling services, interior design company, professional kitchen designer, award-winning designer, experienced interior designer, kitchen design consultation, free design consultation" },
       { name: "author", content: "Dhasan Kitchen & Interior Work" },
       { property: "og:title", content: "Modular Kitchen & Interior Design in Coimbatore | Dhasan" },
@@ -35,12 +35,12 @@ export const Route = createFileRoute("/")({
 });
 
 const services = [
-  { icon: ChefHat, title: "Modular Kitchen", desc: "L, U, parallel and island layouts engineered for the way your family actually cooks." },
-  { icon: Droplets, title: "PVC Modular Kitchen", desc: "Durable, waterproof and low-maintenance kitchens — bold finishes, easy upkeep." },
-  { icon: Layers, title: "Wardrobe Design", desc: "Floor-to-ceiling wardrobes with internal lighting and built-in dressers." },
-  { icon: Tv, title: "TV & Pooja Units", desc: "Statement walls — backlit, fluted, and built-in pooja niches you'll never want to hide." },
-  { icon: Bed, title: "Bedroom Interior", desc: "Cots, wardrobes, side storage and décor — a complete restful space, coordinated." },
-  { icon: Briefcase, title: "Office Interior", desc: "Workstations, cabins, reception walls and acoustic ceilings built for productivity." },
+  { icon: ChefHat, title: "Modular Kitchen", desc: "L, U, parallel and island layouts engineered for the way your family actually cooks.", link: "/modular-kitchen-coimbatore" },
+  { icon: Droplets, title: "PVC Modular Kitchen", desc: "Durable, waterproof and low-maintenance kitchens — bold finishes, easy upkeep.", link: "/modular-kitchen-coimbatore" },
+  { icon: Layers, title: "Wardrobe Design", desc: "Floor-to-ceiling wardrobes with internal lighting and built-in dressers.", link: "/wardrobe-design-coimbatore" },
+  { icon: Tv, title: "TV & Pooja Units", desc: "Statement walls — backlit, fluted, and built-in pooja niches you'll never want to hide.", link: "/home-interiors-coimbatore" },
+  { icon: Bed, title: "Bedroom Interior", desc: "Cots, wardrobes, side storage and décor — a complete restful space, coordinated.", link: "/home-interiors-coimbatore" },
+  { icon: Briefcase, title: "Office Interior", desc: "Workstations, cabins, reception walls and acoustic ceilings built for productivity.", link: "/home-interiors-coimbatore" },
 ];
 
 const why = [
@@ -53,7 +53,107 @@ const why = [
 function Home() {
   return (
     <>
-      {/* FAQ JSON-LD Schema */}
+      {/* Comprehensive Structured Data Schemas */}
+      
+      {/* Organization JSON-LD Schema */}
+      <script 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Dhasan Kitchen & Interior Work",
+            "description": "Professional interior design and modular kitchen solutions in Coimbatore. Offering wardrobe design, TV units, bedroom interiors, office design, and complete home renovation.",
+            "url": "https://www.dhasankitchenandinteriors.in",
+            "telephone": "+916382543774",
+            "email": "contact@dhasankitchenandinteriors.in",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Tenkasi",
+              "addressLocality": "Coimbatore",
+              "addressRegion": "Tamil Nadu",
+              "postalCode": "624514",
+              "addressCountry": "IN"
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Coimbatore" },
+              { "@type": "City", "name": "Tenkasi" }
+            ],
+            "image": "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/f505238e-7c34-4e61-a84f-e7edc6b5cc2a",
+            "priceRange": "₹75000-₹600000",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "50"
+            },
+            "founder": {
+              "@type": "Person",
+              "name": "Mr. V. Mahendran"
+            },
+            "foundingDate": "2018",
+            "sameAs": [
+              "https://www.google.com/maps/place/Dhasan+Kitchen+%26+Interior+Work"
+            ]
+          })
+        }}
+      />
+
+      {/* BreadcrumbList JSON-LD Schema */}
+      <script 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.dhasankitchenandinteriors.in/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Interior Design Services",
+                "item": "https://www.dhasankitchenandinteriors.in/services"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Gallery",
+                "item": "https://www.dhasankitchenandinteriors.in/gallery"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Contact",
+                "item": "https://www.dhasankitchenandinteriors.in/contact"
+              }
+            ]
+          })
+        }}
+      />
+
+      {/* Service Schema */}
+      <script 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ServiceArea",
+            "name": "Interior Design Services in Coimbatore",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Dhasan Kitchen & Interior Work",
+              "url": "https://www.dhasankitchenandinteriors.in"
+            },
+            "areaServed": "Coimbatore, Tamil Nadu, India"
+          })
+        }}
+      />
+
+      {/* Comprehensive FAQ JSON-LD Schema */}
       <script 
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -63,34 +163,42 @@ function Home() {
             "mainEntity": [
               {
                 "@type": "Question",
+                "name": "What are the best interior designers in Coimbatore?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Dhasan Kitchen & Interior Work is among the top interior designers in Coimbatore with 100+ completed projects and 5-star ratings. We specialize in modular kitchens, wardrobes, TV units, and complete home interiors."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does interior design cost in Coimbatore?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Interior design costs in Coimbatore range from ₹75,000 to ₹600,000+ depending on room size and materials. Dhasan provides free consultations with transparent, itemized quotes."
+                }
+              },
+              {
+                "@type": "Question",
                 "name": "How much does a modular kitchen cost in Coimbatore?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "A modular kitchen in Coimbatore typically costs ₹1.5 lakhs to ₹6 lakhs depending on size, material and finish. Dhasan offers free home visits and transparent quotes."
+                  "text": "A modular kitchen in Coimbatore typically costs ₹1.5 lakhs to ₹6 lakhs depending on size, materials (marine ply, PVC, laminate) and hardware brand (Hettich, Hafele). Dhasan provides free home visits and transparent quotes."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Does Dhasan offer free design consultation in Coimbatore?",
+                "name": "Does Dhasan offer free design consultation?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes! Dhasan Kitchen & Interior Work offers a completely free home visit and design consultation across Coimbatore and surrounding areas. Call 6382543774 or WhatsApp to book."
+                  "text": "Yes! We offer completely free home visits and design consultations across Coimbatore. Our designer measures your space, understands your needs, and presents a 3D visualization with pricing."
                 }
               },
               {
                 "@type": "Question",
-                "name": "What interior design services does Dhasan offer?",
+                "name": "How long does modular kitchen installation take?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Dhasan offers modular kitchen design, PVC kitchens, wardrobe design, TV units, pooja units, bedroom interiors, office interiors and complete home renovation in Coimbatore."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How long does a modular kitchen installation take?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A standard modular kitchen installation by Dhasan takes 7–14 working days after design approval, depending on the size and complexity of the project."
+                  "text": "After design approval, factory production takes 10-15 working days. Installation at your home typically takes 2-3 days. We minimize on-site disruption and keep your home clean."
                 }
               }
             ]
@@ -113,11 +221,11 @@ function Home() {
               <Sparkles className="w-3.5 h-3.5 shrink-0" /> <span className="truncate">Coimbatore · Tenkasi · Est. 2018</span>
             </div>
             <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl leading-[1.1] mb-5">
-              Your dream <span className="text-gradient-gold italic">interior</span>,
+              Premium Interior Designers in Coimbatore <span className="text-gradient-gold italic">—</span> Your dream <span className="text-gradient-gold italic">interior</span>,
               <br className="hidden sm:block" /> built around <span className="text-gradient-gold">your life.</span>
             </h1>
             <p className="text-sm text-gold/70 uppercase tracking-[0.2em] mb-4">
-              Modular Kitchen & Interior Design in Coimbatore
+              Modular Kitchens, Wardrobes & Complete Home Interiors
             </p>
             <p className="text-base sm:text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed">
               Modular kitchens, wardrobes, false ceilings and full home interiors — handcrafted in Tenkasi by Mr. V. Mahendran and the Dhasan team. No templates. No shortcuts. Just rooms you'll never want to leave.
@@ -217,7 +325,7 @@ function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s, i) => (
               <Reveal key={s.title} delay={i * 80}>
-                <div className="group relative h-full p-8 rounded-2xl bg-card/50 backdrop-blur border border-border hover:border-gold/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                <Link to={s.link} className="group relative h-full p-8 rounded-2xl bg-card/50 backdrop-blur border border-border hover:border-gold/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-gold/0 to-gold/0 group-hover:from-gold/5 group-hover:to-rose/5 transition-all duration-500" />
                   <div className="relative">
                     <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-gold/20 to-rose/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
@@ -226,7 +334,7 @@ function Home() {
                     <h3 className="font-display text-2xl mb-3">{s.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
                   </div>
-                </div>
+                </Link>
               </Reveal>
             ))}
           </div>
