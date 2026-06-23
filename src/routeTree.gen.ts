@@ -16,10 +16,6 @@ import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as InteriorDesignersCoimbatoreRouteImport } from './routes/interior-designers-coimbatore'
-import { Route as HomeInteriorsCoimbatoreRouteImport } from './routes/home-interiors-coimbatore'
-import { Route as ModularKitchenCoimbatoreRouteImport } from './routes/modular-kitchen-coimbatore'
-import { Route as WardrobeDesignCoimbatoreRouteImport } from './routes/wardrobe-design-coimbatore'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -56,26 +52,6 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const InteriorDesignersCoimbatoreRoute = InteriorDesignersCoimbatoreRouteImport.update({
-  id: '/interior-designers-coimbatore',
-  path: '/interior-designers-coimbatore',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HomeInteriorsCoimbatoreRoute = HomeInteriorsCoimbatoreRouteImport.update({
-  id: '/home-interiors-coimbatore',
-  path: '/home-interiors-coimbatore',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ModularKitchenCoimbatoreRoute = ModularKitchenCoimbatoreRouteImport.update({
-  id: '/modular-kitchen-coimbatore',
-  path: '/modular-kitchen-coimbatore',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const WardrobeDesignCoimbatoreRoute = WardrobeDesignCoimbatoreRouteImport.update({
-  id: '/wardrobe-design-coimbatore',
-  path: '/wardrobe-design-coimbatore',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -85,10 +61,6 @@ export interface FileRoutesByFullPath {
   '/offers': typeof OffersRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/interior-designers-coimbatore': typeof InteriorDesignersCoimbatoreRoute
-  '/home-interiors-coimbatore': typeof HomeInteriorsCoimbatoreRoute
-  '/modular-kitchen-coimbatore': typeof ModularKitchenCoimbatoreRoute
-  '/wardrobe-design-coimbatore': typeof WardrobeDesignCoimbatoreRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -98,10 +70,6 @@ export interface FileRoutesByTo {
   '/offers': typeof OffersRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/interior-designers-coimbatore': typeof InteriorDesignersCoimbatoreRoute
-  '/home-interiors-coimbatore': typeof HomeInteriorsCoimbatoreRoute
-  '/modular-kitchen-coimbatore': typeof ModularKitchenCoimbatoreRoute
-  '/wardrobe-design-coimbatore': typeof WardrobeDesignCoimbatoreRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -112,10 +80,6 @@ export interface FileRoutesById {
   '/offers': typeof OffersRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/interior-designers-coimbatore': typeof InteriorDesignersCoimbatoreRoute
-  '/home-interiors-coimbatore': typeof HomeInteriorsCoimbatoreRoute
-  '/modular-kitchen-coimbatore': typeof ModularKitchenCoimbatoreRoute
-  '/wardrobe-design-coimbatore': typeof WardrobeDesignCoimbatoreRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -127,10 +91,6 @@ export interface FileRouteTypes {
     | '/offers'
     | '/services'
     | '/sitemap.xml'
-    | '/interior-designers-coimbatore'
-    | '/home-interiors-coimbatore'
-    | '/modular-kitchen-coimbatore'
-    | '/wardrobe-design-coimbatore'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -140,10 +100,6 @@ export interface FileRouteTypes {
     | '/offers'
     | '/services'
     | '/sitemap.xml'
-    | '/interior-designers-coimbatore'
-    | '/home-interiors-coimbatore'
-    | '/modular-kitchen-coimbatore'
-    | '/wardrobe-design-coimbatore'
   id:
     | '__root__'
     | '/'
@@ -153,10 +109,6 @@ export interface FileRouteTypes {
     | '/offers'
     | '/services'
     | '/sitemap.xml'
-    | '/interior-designers-coimbatore'
-    | '/home-interiors-coimbatore'
-    | '/modular-kitchen-coimbatore'
-    | '/wardrobe-design-coimbatore'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -167,10 +119,6 @@ export interface RootRouteChildren {
   OffersRoute: typeof OffersRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
-  InteriorDesignersCoimbatoreRoute: typeof InteriorDesignersCoimbatoreRoute
-  HomeInteriorsCoimbatoreRoute: typeof HomeInteriorsCoimbatoreRoute
-  ModularKitchenCoimbatoreRoute: typeof ModularKitchenCoimbatoreRoute
-  WardrobeDesignCoimbatoreRoute: typeof WardrobeDesignCoimbatoreRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -224,34 +172,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/interior-designers-coimbatore': {
-      id: '/interior-designers-coimbatore'
-      path: '/interior-designers-coimbatore'
-      fullPath: '/interior-designers-coimbatore'
-      preLoaderRoute: typeof InteriorDesignersCoimbatoreRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/home-interiors-coimbatore': {
-      id: '/home-interiors-coimbatore'
-      path: '/home-interiors-coimbatore'
-      fullPath: '/home-interiors-coimbatore'
-      preLoaderRoute: typeof HomeInteriorsCoimbatoreRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/modular-kitchen-coimbatore': {
-      id: '/modular-kitchen-coimbatore'
-      path: '/modular-kitchen-coimbatore'
-      fullPath: '/modular-kitchen-coimbatore'
-      preLoaderRoute: typeof ModularKitchenCoimbatoreRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/wardrobe-design-coimbatore': {
-      id: '/wardrobe-design-coimbatore'
-      path: '/wardrobe-design-coimbatore'
-      fullPath: '/wardrobe-design-coimbatore'
-      preLoaderRoute: typeof WardrobeDesignCoimbatoreRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -263,10 +183,6 @@ const rootRouteChildren: RootRouteChildren = {
   OffersRoute: OffersRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
-  InteriorDesignersCoimbatoreRoute: InteriorDesignersCoimbatoreRoute,
-  HomeInteriorsCoimbatoreRoute: HomeInteriorsCoimbatoreRoute,
-  ModularKitchenCoimbatoreRoute: ModularKitchenCoimbatoreRoute,
-  WardrobeDesignCoimbatoreRoute: WardrobeDesignCoimbatoreRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
