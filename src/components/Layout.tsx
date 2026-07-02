@@ -50,8 +50,8 @@ function Header() {
           })}
         </nav>
 
-        <a href="tel:6382543774" className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium text-sm hover:scale-105 transition-transform shimmer">
-          <Phone className="w-4 h-4" /> Book Free Visit
+        <a href="tel:+916382543774" className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium text-sm hover:scale-105 transition-transform shimmer">
+          <Phone className="w-4 h-4" /> <span className="whitespace-nowrap">+91 63825 43774</span>
           <span className="shimmer-overlay" />
         </a>
 
@@ -66,8 +66,8 @@ function Header() {
             {nav.map(n => (
               <Link key={n.to} to={n.to} className="py-3 px-4 rounded-lg hover:bg-secondary text-foreground/90 uppercase text-sm tracking-wider">{n.label}</Link>
             ))}
-            <a href="tel:6382543774" className="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium">
-              <Phone className="w-4 h-4" /> Call Now
+            <a href="tel:+916382543774" className="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-gold to-gold-soft text-primary-foreground font-medium">
+              <Phone className="w-4 h-4" /> +91 63825 43774
             </a>
           </div>
         </div>
@@ -100,10 +100,14 @@ function Footer() {
 
         <div>
           <h4 className="text-gold uppercase tracking-wider text-sm mb-4">Reach Us</h4>
+          <div className="mb-4 rounded-xl border border-gold/20 bg-gold/5 p-3">
+            <p className="text-[11px] uppercase tracking-[0.3em] text-gold mb-2">Call now</p>
+            <a href="tel:+916382543774" className="text-lg font-semibold text-foreground hover:text-gold transition-colors">+91 63825 43774</a>
+          </div>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 text-gold shrink-0" /> 1/174 E, Golden Park, Somayampalayam, Coimbatore North, Coimbatore, Tamilnadu - 641041</li>
-            <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-gold" /> <a href="tel:6382543774" className="hover:text-gold">6382543774</a> / <a href="tel:9442723200" className="hover:text-gold">9442723200</a></li>
-            <li className="flex items-center gap-2"><MessageCircle className="w-4 h-4 text-gold" /> <a href="https://wa.me/916382543774" className="hover:text-gold">6382543774</a></li>
+            <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-gold" /> <a href="tel:+916382543774" className="hover:text-gold">+91 63825 43774</a> / <a href="tel:+919442723200" className="hover:text-gold">+91 94427 23200</a></li>
+            <li className="flex items-center gap-2"><MessageCircle className="w-4 h-4 text-gold" /> <a href="https://wa.me/916382543774" className="hover:text-gold">+91 63825 43774</a></li>
             <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-gold" /> <a href="mailto:mahimahi94426@gmail.com" className="hover:text-gold break-all">mahimahi94426@gmail.com</a></li>
           </ul>
           <p className="text-xs text-muted-foreground mt-6">Open 24 hours · Serving Coimbatore and Tenkasi and surrounding areas</p>

@@ -46,6 +46,9 @@ function Contact() {
           <p className="text-gold uppercase tracking-[0.3em] text-xs mb-4">Let's talk</p>
           <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl mb-6 max-w-4xl mx-auto leading-tight">Let's build your <span className="text-gradient-gold italic">dream space</span> together.</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Tell us about your home. We'll respond within the hour — most days, within minutes.</p>
+          <a href="tel:+916382543774" className="mt-6 inline-flex items-center justify-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-5 py-3 text-lg font-semibold text-gold hover:bg-gold/20 transition-colors">
+            <Phone className="w-5 h-5" /> +91 63825 43774
+          </a>
         </Reveal>
       </section>
 
@@ -62,11 +65,11 @@ function Contact() {
                 <div className="min-w-0">
                   <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Call us</p>
                   <p className="text-foreground font-medium break-words">
-                    <a href="tel:6382543774" className="hover:text-gold transition">6382543774</a>
+                    <a href="tel:+916382543774" className="hover:text-gold transition">+91 63825 43774</a>
                   </p>
                   <p className="text-foreground font-medium break-words text-sm">
                     <span className="text-muted-foreground">Alternative: </span>
-                    <a href="tel:9442723200" className="hover:text-gold transition">9442723200</a>
+                    <a href="tel:+919442723200" className="hover:text-gold transition">+91 94427 23200</a>
                   </p>
                   <p className="text-xs text-muted-foreground mt-1">Open 24 hours</p>
                 </div>
